@@ -27,7 +27,7 @@
     font-weight: 900;
 }
 .transportHomePage p{
-    color: rgb(123, 121, 121);
+    color: rgb(205, 203, 203);
 }
 /*  heroSection */
 .transportHomePage .heroSection{
@@ -42,6 +42,10 @@
     min-height: 650px;
     /* background-color: #02254b92; */
     /* z-index: 2; */
+}
+
+.transportHomePage .heroSection h5{
+    color: white;
 }
 .transportHomePage .heroSection::before{
     inset: 0;
@@ -116,6 +120,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 .transportHomePage .heroSection .herSecDiv span:last-child{
     border: none;
