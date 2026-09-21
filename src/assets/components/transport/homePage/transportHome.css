@@ -664,4 +664,104 @@
     .transportHomePage .heroSection .heroFoter div span{
         font-size: 20px;
     }
+
+    /* whoWeAre */
+    .transportHomePage .whoWeAre .wItemSec {
+        display: flex;
+        
+    }
+    .transportHomePage .whoWeAre .wItemSec .WImg{
+        display: none;
+
+    }
+
+    /* whatWeDo */
+    .transportHomePage .whatWeDo .weDoSec{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        background-color: transparent;
+    }
+    .transportHomePage .whatWeDo .weDoSec div{
+        width: 100%;
+    }
+    .transportHomePage .whatWeDo .weDoSec div:last-child h3{
+        font-size: 25px;
+    }
+
+    /* ourFleet */
+    .transportHomePage .ourFleet > p{
+        text-align: start;
+    }
+    .transportHomePage .ourFleet h1{
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .transportHomePage .ourFleet .ourFleetSec .ourfleetItem{
+        width: 250px;
+        justify-content: space-between;
+        height: 310px;
+    }
+    .transportHomePage .ourFleet .ourFleetSec .ourfleetItem div{
+        background-color: #02254B;
+        /* height: 0px; */
+    }
+
+    /* WhyChooseUs */
+    .transportHomePage .WhyChooseUs .wcuTopSec {
+        background-color: transparent;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+
+    }
+    .transportHomePage .WhyChooseUs .wcuTopSec h1{
+        font-size: 30px;
+        color: white;
+    }
+    .transportHomePage .WhyChooseUs .wcuTopSec .topSecImg{
+        display: none;
+    }
+    .transportHomePage .WhyChooseUs .secSecdiv{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* howWeWork */
+    .transportHomePage .howWeWork{
+        width: 90%;
+    }
+    .transportHomePage .howWeWork h1{
+        text-align: start;
+    }
+    /* ourFleet */
+    .transportHomePage .project > p{
+        text-align: start;
+    }
+    .transportHomePage .project h1{
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .transportHomePage .project .projectSec .projectItem{
+        width: 250px;
+        justify-content: space-between;
+        height: 310px;
+    }
+    .transportHomePage .project .projectSec .projectItem div{
+        background-color: #02254B;
+        /* height: 0px; */
+    }
+
+
+    .transportHomePage .homeContactUs{
+        width: 90%;
+    }
+    .transportHomePage .homeContactUs p{
+        width: 100%;
+    }
+    .transportHomePage .homeContactUs h1{
+        font-size: 25px;
+        width: 100%;
+    }
 }
