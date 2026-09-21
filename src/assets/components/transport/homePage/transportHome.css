@@ -131,6 +131,7 @@
     background-color: #02254b;
     padding: 20px 0px;
     margin-top: auto;
+    gap: 10px;
 }
 .transportHomePage .heroSection .heroFoter div{
     display: flex;
@@ -642,4 +643,25 @@
     background-repeat: no-repeat;
     aspect-ratio: 20/10;
     transform: translateY(60px);
+}
+
+@media (max-width:765px){
+
+    .transportHomePage h1{
+        font-size: 30px;
+    }
+    /* heroSection */
+    .transportHomePage .heroSection h1{
+        font-size: 40px;
+    }
+    .transportHomePage .heroSection .heroFoter {
+        justify-content: center;
+        margin-top: auto;
+    }
+    .transportHomePage .heroSection .heroFoter div p{
+        font-size: 10px;
+    }
+    .transportHomePage .heroSection .heroFoter div span{
+        font-size: 20px;
+    }
 }
