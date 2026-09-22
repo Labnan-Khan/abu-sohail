@@ -683,6 +683,12 @@
         width: 100%;
     }
 
+    /* project */
+    .transportHomePage .project .projectSec .projectItem{
+        width: 300px;
+        height: auto;
+        min-height: 350px;
+    }
     /* howWeWork */
     .transportHomePage .howWeWork{
         width: 90%;
