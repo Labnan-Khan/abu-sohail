@@ -592,6 +592,9 @@
         font-size: 30px;
     }
     /* heroSection */
+    .transportHomePage .heroSection  .herobgImg{
+        min-height: 250px;
+    }
     .transportHomePage .heroSection h1{
         font-size: 40px;
     }
