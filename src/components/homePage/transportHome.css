@@ -1,64 +1,71 @@
-.machinHomePage{
+.transportHomePage{
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 100px;
-    background-color: black;
 }
 
-.machinHomePage h5{
-    color: white;
-    border: 1px solid #F5B82E;
+.transportHomePage h5{
+    color: black;
+    border: 1px solid #02254B;
     width: fit-content;
     padding: 5px 10px;
     border-radius: 30px;
     font-size: 13px;
 }
-.machinHomePage h1{
-    color: white;
+.transportHomePage h1{
+    color: black;
     font-size: 40px;
     text-align: center;
 }
-.machinHomePage h1 span{
-    color: #164E63;
+.transportHomePage h1 span{
+    color: #F5B82E;
     font-family: cursive;
     width: fit-content;
     font-weight: 900;
 }
-.machinHomePage p{
-    color: rgb(205, 203, 203);
+.transportHomePage p{
+    color: rgb(132, 131, 131);
 }
-/*  heroSection */
-.machinHomePage .heroSection{
-    width: 90%;
+.transportHomePage .heroSection{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    padding: 20px 10px;
-    background-color: #02254b92;
-    border-bottom-left-radius: 30px;
+    gap: 10px;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.transportHomePage .heroSection h5{
+    color: #02254B;
+    
+}
+.transportHomePage .heroSection .herobgImg{
+    
+    border: 2px solid #02254B;
+    border-top: 0px;
+    width: 90%;
+    aspect-ratio: 25/10;
     border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    max-height: 500px;
+    background-image: url(../../assets/transportHomeHerosectionImg.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+
 }
 
-.machinHomePage .heroSection h5{
-    color: white;
+.transportHomePage .heroSection h1{
+    font-size: 60px;
 }
 
-
-.machinHomePage .heroSection > p{
-    text-align: center;
-    width: 60%;
-}
-.machinHomePage .heroSection h1{
-    /* font-size: 60px; */
-    text-align: center;
-}
-
-.machinHomePage .heroSection .heroBtn{
+.transportHomePage .heroSection .heroBtn{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,7 +74,7 @@
     flex-wrap: wrap;
     padding-left: 40px;
 }
-.machinHomePage .heroSection .heroBtn button{
+.transportHomePage .heroSection .heroBtn button{
     background-color: #02254B;
     color: white;
     padding: 10px;
@@ -81,7 +88,7 @@
         border: 1px solid black;
     }
 }
-.machinHomePage .heroSection .heroBtn button:last-child{
+.transportHomePage .heroSection .heroBtn button:last-child{
     background-color: white;
     border: 1px solid black;
     color: black;
@@ -91,65 +98,32 @@
         color: white;
     }
 }
-.machinHomePage .heroSection .herSecDiv{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    width: fit-content;
-    background-color: #9f71062f;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid #F5B82E;
-    margin-left: 40px;
-}
-.machinHomePage .heroSection .herSecDiv span{
-    border-right: 2px solid #f6ad02;
-    padding-right: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-.machinHomePage .heroSection .herSecDiv span:last-child{
-    border: none;
-    padding: 0px;
-}
-.machinHomePage .heroSection .heroFoter{
+
+.transportHomePage .heroSection .heroFoter{
     width: 80%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    border: 1px solid white;
-    padding: 20px 0px;
-    border-radius: 20px;
-    gap: 10px;
+    gap: 30px;
+    margin: 10px 0px;
 }
-.machinHomePage .heroSection .heroFoter div{
+.transportHomePage .heroSection .heroFoter div{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: fit-content;
-    /* border: 1px solid #02254B; */
-    border-radius: 10px;
-    background-color: #597ba063;
-    color: white;
-    padding: 10px;
+    gap: 10px;
 }
-.machinHomePage .heroSection .heroFoter div p{
-    font-size: 14px;
-    color: rgb(125, 123, 123);
-}
-.machinHomePage .heroSection .heroFoter div span{
+.transportHomePage .heroSection .heroFoter div span{
     display: flex;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 
 /* whoWeAre */
-.machinHomePage .whoWeAre{
+.transportHomePage .whoWeAre{
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -157,69 +131,78 @@
     align-items: center;
     gap: 10px;
 }
-.machinHomePage .whoWeAre >p,
-.machinHomePage .whoWeAre h1{
+.transportHomePage .whoWeAre >p,
+.transportHomePage .whoWeAre h1{
     text-align: center;
     width: 80%;
 }
-.machinHomePage .whoWeAre .btnSection{
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    width: 100%;
-    margin-top: 35px;
-}
-.machinHomePage .whoWeAre .btnSection span{
-    display: flex;
-    border: 1px solid #164E63;
-    padding: 5px 10px;
-    font-size: 17px;
-    border-radius: 10px;
-    background-color: #2ab0e129;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    &:hover{
-        color: #164E63;
-        background-color: white;
-    }
-}
-.machinHomePage .whoWeAre .wItemSec{
-    width: 100%;
+.transportHomePage .whoWeAre .wItemSec{
+    width: 90%;
     display: grid;
-    grid-template-columns: 40% 50%;
+    grid-template-columns: repeat(2,1fr);
     justify-content: center;
     align-items: center;
     gap: 20px;
     padding: 20px 0px;
+    background-color: #02254b1b;
+    padding: 20px;
+    border-radius: 30px;
 }
-.machinHomePage .whoWeAre .wItemSec .WImg{
-    aspect-ratio: 9/12;
-    background-color: #02254B;
-    background-image: url(../transportHomeHerosectionImg.webp);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-}
-.machinHomePage .whoWeAre .wItemSec .wRightSec{
+
+.transportHomePage .whoWeAre .wItemSec .wRightSec{
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
+    background-color: #02254b45;
+    padding: 20px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.05);
+    }
 }
-
-
-.machinHomePage .whoWeAre .wItemSec .wRightSec  h2{
-    color: white;
+.transportHomePage .whoWeAre .wItemSec .wRightSec h2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #02254B;
+    margin-bottom: 20px;
 }
-.machinHomePage .whoWeAre .wItemSec .wRightSec div p{
+.transportHomePage .whoWeAre .wItemSec .wRightSec div{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.185);
+    padding: 10px;
+    margin-left: 10px;
+}
+.transportHomePage .whoWeAre .wItemSec .wRightSec div:last-child{
+    border: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+.transportHomePage .whoWeAre .wItemSec .wRightSec div span{
     color: white;
+    background-color: #02254B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 50%;
+}
+.transportHomePage .whoWeAre .wItemSec .wRightSec div p{
+    color: black;
     font-size: 18px;
 }
-.machinHomePage .whoWeAre .wItemSec .wRightSec button{
+.transportHomePage .whoWeAre .wItemSec .wRightSec button{
     width: fit-content;
     font-size: 17px;
     background-color: white;
@@ -235,7 +218,7 @@
 }
 
 /* whatWeDo */
-.machinHomePage .whatWeDo{
+.transportHomePage .whatWeDo{
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -243,11 +226,11 @@
     align-items: center;
     gap: 10px;
 }
-.machinHomePage .whatWeDo > p{
+.transportHomePage .whatWeDo > p{
     text-align: center;
 }
 
-.machinHomePage .whatWeDo .weDoSec{
+.transportHomePage .whatWeDo .weDoSec{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -256,80 +239,105 @@
     padding: 20px;
     border-radius: 30px;
 }
-.machinHomePage .whatWeDo .weDoSec div{
-    background-color: #2444662c;
+.transportHomePage .whatWeDo .weDoSec div{
+    background-color: #02254b2a;
     border-radius: 20px;
-    padding: 10px;
+    /* padding: 10px; */
     display: flex;
     flex-direction: column;
     justify-content: end;
     gap: 10pxs;
     min-height: 250px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &:hover{
+        transform: scale(1.03);
+        box-shadow: 0px 0px 10px black;
+    }
 }
-.machinHomePage .whatWeDo .weDoSec div:last-child{
+.transportHomePage .whatWeDo .weDoSec div:last-child{
     grid-column: span 3;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom left, rgba(255, 255, 255, 0.176) , #164E63);
+    background: linear-gradient(to bottom left, #02254b5c , #02254B);
     color: white;
     gap: 10px;
 }
-.machinHomePage .whatWeDo .weDoSec div span{
-    display: flex;
-    font-size: 60px;
-    margin-bottom: 20px;
-    padding-left: 20px;
-    color: #1d7190;
-}
-.machinHomePage .whatWeDo .weDoSec div h3{
+
+.transportHomePage .whatWeDo .weDoSec div h3{
     color: white;
-    font-size: 25px;
-    margin-bottom: 10px;
+    font-size: 17px;
+    backdrop-filter: blur(5px);
+    background-color: #02254b1b;
+    padding: 10px;
+    height: 80px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
-.machinHomePage .whatWeDo .weDoSec div:last-child h3{
+
+.transportHomePage .whatWeDo .weDoSec div p{
+    color: rgb(93, 92, 92);
+    font-size: 15px;
+    backdrop-filter: blur(5px);
+    background-color: #02254b1b;
+    padding: 10px;
+    padding-top: 0px;
+    height: 80px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.transportHomePage .whatWeDo .weDoSec div:last-child h3{
     color: white;
     font-size: 35px;
     text-align: center;
+    backdrop-filter: blur(0px);
+    background-color: transparent;
+    height: auto;
 }
-.machinHomePage .whatWeDo .weDoSec div:last-child p{
-    color: rgb(149, 146, 146);
+.transportHomePage .whatWeDo .weDoSec div:last-child p{
+    color: rgb(0, 0, 0);
     text-align: center;
     font-size: 17px;
 }
-.machinHomePage .whatWeDo .weDoSec div:last-child button{
+.transportHomePage .whatWeDo .weDoSec div:last-child button{
     font-size: 20px;
     padding: 15px 30px;
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: black;
     border-radius: 20px;
     margin-top: 15px;
 }
 
 /* ourFleet */
-.machinHomePage .ourFleet{
+.transportHomePage .ourFleet{
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
     overflow: hidden;
-    background-color: #164E63;
+    background-color: #02254B;
     padding: 70px 50px;
  }
-.machinHomePage .ourFleet > h5{
+.transportHomePage .ourFleet > h5{
     color: white;
 }
-.machinHomePage .ourFleet > p{
+.transportHomePage .ourFleet > p{
     text-align: center;
     font-size: 17px;
 }
-.machinHomePage .ourFleet h1{
+.transportHomePage .ourFleet h1{
     text-align: start;
     font-size: 50px;
     color: white;
 }
-.machinHomePage .ourFleet .ourFleetSec{
+.transportHomePage .ourFleet .ourFleetSec{
     width: 100%;
     display: flex;
     justify-content: start;
@@ -339,7 +347,7 @@
     margin-top: 20px;
     scrollbar-width: none;
 }
-.machinHomePage .ourFleet .ourFleetSec .ourfleetItem{
+.transportHomePage .ourFleet .ourFleetSec .ourfleetItem{
     width: 300px;
     height: 350px;
     background-color: white;
@@ -353,7 +361,7 @@
     overflow: hidden;
     
 }
-.machinHomePage .ourFleet .ourFleetSec .ourfleetItem div{
+.transportHomePage .ourFleet .ourFleetSec .ourfleetItem div{
     background-image: url(../transportHomeHerosectionImg.webp);
     width: 100%;
     aspect-ratio: 12/9;
@@ -361,28 +369,28 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-.machinHomePage .ourFleet .ourFleetSec .ourfleetItem h3{
+.transportHomePage .ourFleet .ourFleetSec .ourfleetItem h3{
     padding: 0px 10px;
     color: #02254B;
     font-size: 25px;
     margin-top: 20px;
 }
-.machinHomePage .ourFleet .ourFleetSec .ourfleetItem p{
+.transportHomePage .ourFleet .ourFleetSec .ourfleetItem p{
     padding: 0px 10px;
     color: rgb(129, 128, 128);
 }
 
 
-.machinHomePage .ourFleet .ourFleetSec .ourfleetItem:last-child{
+.transportHomePage .ourFleet .ourFleetSec .ourfleetItem:last-child{
     padding: 10px;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.machinHomePage .ourFleet .ourFleetSec .ourfleetItem:last-child h3{
-    font-size: 25px;
+.transportHomePage .ourFleet .ourFleetSec .ourfleetItem:last-child h3{
+    font-size: 40px;
 }
-.machinHomePage .ourFleet .ourFleetSec .ourfleetItem:last-child button{
+.transportHomePage .ourFleet .ourFleetSec .ourfleetItem:last-child button{
     width: 90%;
     padding: 10px;
     font-size: 20px;
@@ -393,7 +401,7 @@
 }
 
 /* WhyChooseUs */
-.machinHomePage .WhyChooseUs{
+.transportHomePage .WhyChooseUs{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -406,69 +414,44 @@
     padding: 100px 40px;
  }
 
-
-.machinHomePage .WhyChooseUs .secSecdiv{
+.transportHomePage .WhyChooseUs h1{
+    color: white;
+    text-align: start;
+}
+.transportHomePage .WhyChooseUs .secSecdiv{
     width: 100%;
     display: grid;
-
-    grid-template-areas: "item1 item2 item2"
-                          "item1 item3 item4"
-                          "item5 item5 item6";
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
-.machinHomePage .WhyChooseUs .secSecdiv div{
+.transportHomePage .WhyChooseUs .secSecdiv div{
     display: flex;
     flex-direction: column;
     justify-content: end;
     gap: 10px;
-    background-color: rgba(255, 255, 255, 0.111);
+    background-color: white;
     padding: 10px;
     border-radius: 20px;
     min-height: 200px;
+    transition: all 0.3s ease;
+    &:hover{
+        transform: scale(1.02);
+    }
 }
-.machinHomePage .WhyChooseUs .secSecdiv div span{
+.transportHomePage .WhyChooseUs .secSecdiv div span{
     font-size: 40px;
     display: flex;
     padding: 20px;
-    color: white;
+    color: #02254B;
 }
-.machinHomePage .WhyChooseUs .secSecdiv div h3{
+.transportHomePage .WhyChooseUs .secSecdiv div h3{
     font-size: 20px;
-    color: #164E63;
+    color: black;
 }
 
-.machinHomePage .WhyChooseUs .secSecdiv div:nth-child(1) span{
-    width: 100%;
-    height: 50%;
-    background-color: #164E63;
-    border-radius: 30px;
-    margin-bottom: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 70px;
-}
-.machinHomePage .WhyChooseUs .secSecdiv div:nth-child(1){
-    grid-area: item1;
-}
-.machinHomePage .WhyChooseUs .secSecdiv div:nth-child(2){
-    grid-area: item2;
-}
-.machinHomePage .WhyChooseUs .secSecdiv div:nth-child(3){
-    grid-area: item3;
-}
-.machinHomePage .WhyChooseUs .secSecdiv div:nth-child(4){
-    grid-area: item4;
-}
-.machinHomePage .WhyChooseUs .secSecdiv div:nth-child(5){
-    grid-area: item5;
-}
-.machinHomePage .WhyChooseUs .secSecdiv div:nth-child(6){
-    grid-area: item6;
-}
 
 /* project */
-.machinHomePage .project{
+.transportHomePage .project{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -477,15 +460,15 @@
     overflow: hidden;
     padding: 70px 50px;
  }
-.machinHomePage .project > p{
-    /* text-align: center; */
+.transportHomePage .project > p{
+    text-align: center;
     font-size: 17px;
 }
-.machinHomePage .project h1{
+.transportHomePage .project h1{
     text-align: start;
     font-size: 50px;
 }
-.machinHomePage .project .projectSec{
+.transportHomePage .project .projectSec{
     width: 100%;
     display: flex;
     justify-content: start;
@@ -495,10 +478,10 @@
     margin-top: 20px;
     scrollbar-width: none;
 }
-.machinHomePage .project .projectSec .projectItem{
+.transportHomePage .project .projectSec .projectItem{
     width: 300px;
     height: 350px;
-    background-color: white;
+    background-color: black;
     padding-bottom: 20px;
     border-radius: 20px;
     display: flex;
@@ -509,7 +492,7 @@
     overflow: hidden;
     
 }
-.machinHomePage .project .projectSec .projectItem div{
+.transportHomePage .project .projectSec .projectItem div{
     background-image: url(../transportHomeHerosectionImg.webp);
     width: 100%;
     aspect-ratio: 12/9;
@@ -517,39 +500,81 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-.machinHomePage .project .projectSec .projectItem h3{
+.transportHomePage .project .projectSec .projectItem h3{
     padding: 0px 10px;
-    color: black;
-    font-size: 25px;
+    color: white;
+    font-size: 18px;
     margin-top: 20px;
 }
-.machinHomePage .project .projectSec .projectItem p{
-    padding: 0px 10px;
-    color: rgb(90, 89, 89);
+.transportHomePage .project .projectSec .projectItem p{
+    padding:10px;
+    font-size: 15px;
+    color: rgb(129, 128, 128);
 }
 
 
-.machinHomePage .project .projectSec .projectItem:last-child{
+.transportHomePage .project .projectSec .projectItem:last-child{
     padding: 10px;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.machinHomePage .project .projectSec .projectItem:last-child h3{
-    font-size: 25px;
+.transportHomePage .project .projectSec .projectItem:last-child h3{
+    font-size: 40px;
 }
-.machinHomePage .project .projectSec .projectItem:last-child button{
+.transportHomePage .project .projectSec .projectItem:last-child button{
     width: 90%;
     padding: 10px;
     font-size: 20px;
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
     border-radius: 10px;
 
 }
+/* howWeWork */
+.transportHomePage .howWeWork{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #02254b3b;
+    padding: 40px 20px;
+    border-radius: 30px;
+    /* border: 1px solid #02254B; */
+    box-shadow:  0px 0px 20px #02254B;
+}
+.transportHomePage .howWeWork > div{
+    width: 100%;
+    background-color: #02254B;
+    border-radius: 20px;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.transportHomePage .howWeWork > div div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.transportHomePage .howWeWork  div span{
+    font-size: 30px;
+    color: white;
+    display: flex;
+}
+.transportHomePage .howWeWork div h4{
+    color: rgb(160, 158, 158);
+    font-size: 13px;
+    text-align: center;
+}
+
 
 /* homeContactUs */
-.machinHomePage .homeContactUs{
+.transportHomePage .homeContactUs{
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -557,61 +582,55 @@
     align-items: center;
     text-align: center;
     gap: 10px;
-    background-color: white;
+    background-color: #02254B;
     margin-bottom: 50px;
     padding: 20px;
     border-radius: 30px;
     min-height: 250px;
     margin-top: 50px;
 }
-.machinHomePage .homeContactUs h1{
-    color: black;
+.transportHomePage .homeContactUs h1{
+    color: white;
     width: 80%;
 }
-.machinHomePage .homeContactUs p{
+.transportHomePage .homeContactUs p{
     font-size: 20px;
     margin-bottom: 30px;
     width: 70%;
-    color: rgb(100, 99, 99);
 }
 
-.machinHomePage .homeContactUs button{
-    color: white;
-    background-color: black;
+.transportHomePage .homeContactUs button{
+    color: black;
+    background-color: white;
     font-size: 20px;
     padding: 15px 30px;
     border-radius: 10px;
 }
 
 /* Coverage */
-.machinHomePage .Coverage{
+.transportHomePage .Coverage{
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    background-color: #02254B;
     padding-top: 60px;
-    background-color: white;
+}
+.transportHomePage .Coverage h1,
+.transportHomePage .Coverage h5{
+    color: white;
 }
 
-.machinHomePage .Coverage p{
-    text-align: center;
-    color: rgb(96, 95, 95);
-}
-.machinHomePage .Coverage h1,
-.machinHomePage .Coverage h5{
-    color: black;
-}
-
-.machinHomePage .Coverage div{
+.transportHomePage .Coverage div{
     width: 100%;
-    background-image: url(../../../mapImg.jpg);
-    background-position: center;
+    background-image: url(../../assets/coverageImg.png);
+    background-position: center bottom;
     background-size: cover;
     background-repeat: no-repeat;
     aspect-ratio: 20/10;
-    
+    transform: translateY(60px);
 }
 
 @media (max-width:765px){

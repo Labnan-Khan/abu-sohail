@@ -66,12 +66,12 @@ function Navbar() {
         <div className='navName'><a to="/" >ABU SOHAIL</a></div>
         <div className='navMenu' onClick={ ()=>{ setClickMenu(!clickMenu); setDropMenu(!dropMenu)} }>{(!clickMenu)?<RiMenuLine /> :<RiMenuUnfold4Line/> } </div>
         
-    
+        <div className={clickMenu? "show" : ""} onClick={ ()=>{ setClickMenu(!clickMenu); setDropMenu(!dropMenu)} }></div>
         <ul className={`navLi ${(dropMenu)? " navLiM" : ""}`} onClick={ ()=>{ setClickMenu(!clickMenu); setDropMenu(!dropMenu)} }>
             <li><a to="/" >Home</a></li>
-            <li><a to="/about" >About Us</a></li>
             <li><a to="/journal" >Services</a></li>
-            <li><a to="/ourPlan" >Fleet</a></li>
+            <li><a to="/ourPlan" >Transportaion</a></li>
+            <li><a to="/ourPlan" >Heavy Machinery</a></li>
             <li><a to="/projects" >Projects</a></li>
             <li><a to="/contact" >Contact Us</a></li>
         </ul>

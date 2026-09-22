@@ -1,0 +1,97 @@
+
+@keyframes scrollTesti {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+    
+
+}
+@keyframes scrollmiddle {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0);
+    }
+    
+
+}
+
+
+.testiBoxSec{
+    margin-top: 40px;
+    width: 100%;
+    /* display:flex ; */
+    gap: 6px;
+     /* animation: scrollTesti 4s linear infinite; */
+     /* background-color: #8D1FD4; */
+     overflow: hidden; /*add this*/
+     box-sizing: content-box;
+     
+     /* border: 1px solid white; */
+     
+}
+
+.testiTrack {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    gap: 6px;
+    width: max-content;
+    animation: scrollTesti 100s linear infinite;
+}
+.testiTrack.middleSec{
+
+    animation: scrollmiddle 100s linear infinite;
+}
+
+.testiTrack:hover{
+    /* animation-play-state: paused; */
+}
+
+.testiBoxSec .tBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    /* border: 2px solid white; */
+    padding: 20px;
+    width: 200px;
+    aspect-ratio: 9/12;
+    gap: 20px;
+    background-color: #8c1fd400;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.49);
+    flex-shrink: 0;
+    box-sizing: content-box;
+    backdrop-filter: brightness(1.1) blur(20px)  saturate(100%);
+    box-shadow: inset 0px 0px 30px #8c1fd400;
+    text-align: center;
+    /* background-color: #8D1FD4; */
+    /* animation: scrollTesti 50s linear infinite; */
+
+    background-image: url(../../assets/machinebgImg1.jpg);
+    background-position: center;
+    background-size: 120% 110%;
+    background-repeat: no-repeat;
+}
+
+ 
+
+ 
+
+
+
+ @media (max-width:768px){
+    .testimonial{
+        background-image: none;
+        padding-bottom: 30px;
+    }
+
+    .testiTrack {
+    animation: scrollTesti 90s linear infinite;
+}
+ }

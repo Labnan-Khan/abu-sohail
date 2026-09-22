@@ -1,15 +1,14 @@
 import React from 'react'
-import SlectBussnes from './assets/components/SlectBussnes'
-import TransportRouteApp from './assets/components/transport/TransportRouteApp'
-import MachienryHomePage from './assets/components/machienry/homePage/MachienryHomePage'
-import MachienryRouteApp from './assets/components/machienry/MachienryRouteApp'
+import Navbar from './components/navbar/Navbar'
+import Footera from './components/footer/Footera'
+import TransportHomePage from './components/homePage/TransportHomePage'
 
 function App() {
   return (
     <div>
-      {/* <SlectBussnes /> */}
-      {/* <TransportRouteApp /> */}
-      <MachienryRouteApp />
+      <Navbar />
+      <TransportHomePage />
+      <Footera />
     </div>
   )
 }
