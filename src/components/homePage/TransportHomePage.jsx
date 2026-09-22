@@ -224,7 +224,7 @@ const projectData = [
 
         </div> */}
         <div className='whatWeDo'>
-    <h5>Why Choose Us</h5>
+    
 
     <h1>
         Reliable Solutions for <span>Every Project.</span>
@@ -279,7 +279,7 @@ const projectData = [
         </div>
 
         <div className='project'>
-            <h5>Projects</h5>
+            {/* <h5>Projects</h5> */}
             <h1>Where Transportation <br /> Meets <span>Performance</span></h1>
             <p>Real transportation solutions supporting businesses and major projects.</p>
             <div className='projectSec'>

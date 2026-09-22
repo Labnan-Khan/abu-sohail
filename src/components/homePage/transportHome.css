@@ -29,6 +29,7 @@
 .transportHomePage p{
     color: rgb(132, 131, 131);
 }
+/* herosection */
 .transportHomePage .heroSection{
     width: 100%;
     display: flex;
@@ -40,6 +41,9 @@
     padding-bottom: 50px;
 }
 
+.transportHomePage .heroSection > p{
+    text-align: center;
+}
 .transportHomePage .heroSection h5{
     color: #02254B;
     
@@ -266,6 +270,7 @@
     background: linear-gradient(to bottom left, #02254b5c , #02254B);
     color: white;
     gap: 10px;
+    padding: 20px 1px;
 }
 
 .transportHomePage .whatWeDo .weDoSec div h3{
@@ -283,8 +288,8 @@
 .transportHomePage .whatWeDo .weDoSec div p{
     color: rgb(93, 92, 92);
     font-size: 15px;
-    backdrop-filter: blur(5px);
-    background-color: #02254b1b;
+    /* backdrop-filter: blur(5px); */
+    /* background-color: #02254b1b; */
     padding: 10px;
     padding-top: 0px;
     height: 80px;
@@ -292,6 +297,7 @@
     justify-content: start;
     align-items: center;
 }
+
 .transportHomePage .whatWeDo .weDoSec div:last-child h3{
     color: white;
     font-size: 35px;
@@ -304,6 +310,7 @@
     color: rgb(0, 0, 0);
     text-align: center;
     font-size: 17px;
+    backdrop-filter: blur(0px);
 }
 .transportHomePage .whatWeDo .weDoSec div:last-child button{
     font-size: 20px;
@@ -323,7 +330,7 @@
     align-items: start;
     overflow: hidden;
     background-color: #02254B;
-    padding: 70px 50px;
+    padding: 70px 00px;
  }
 .transportHomePage .ourFleet > h5{
     color: white;
@@ -331,73 +338,16 @@
 .transportHomePage .ourFleet > p{
     text-align: center;
     font-size: 17px;
+    padding: 0px 40px;
 }
 .transportHomePage .ourFleet h1{
     text-align: start;
     font-size: 50px;
     color: white;
+    padding: 0px 40px;
 }
 .transportHomePage .ourFleet .ourFleetSec{
     width: 100%;
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    gap: 20px;
-    overflow:scroll;
-    margin-top: 20px;
-    scrollbar-width: none;
-}
-.transportHomePage .ourFleet .ourFleetSec .ourfleetItem{
-    width: 300px;
-    height: 350px;
-    background-color: white;
-    padding-bottom: 20px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    flex-shrink: 0;
-    overflow: hidden;
-    
-}
-.transportHomePage .ourFleet .ourFleetSec .ourfleetItem div{
-    background-image: url(../transportHomeHerosectionImg.webp);
-    width: 100%;
-    aspect-ratio: 12/9;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.transportHomePage .ourFleet .ourFleetSec .ourfleetItem h3{
-    padding: 0px 10px;
-    color: #02254B;
-    font-size: 25px;
-    margin-top: 20px;
-}
-.transportHomePage .ourFleet .ourFleetSec .ourfleetItem p{
-    padding: 0px 10px;
-    color: rgb(129, 128, 128);
-}
-
-
-.transportHomePage .ourFleet .ourFleetSec .ourfleetItem:last-child{
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.transportHomePage .ourFleet .ourFleetSec .ourfleetItem:last-child h3{
-    font-size: 40px;
-}
-.transportHomePage .ourFleet .ourFleetSec .ourfleetItem:last-child button{
-    width: 90%;
-    padding: 10px;
-    font-size: 20px;
-    color: white;
-    background-color: #02254B;
-    border-radius: 10px;
-
 }
 
 /* WhyChooseUs */
@@ -458,17 +408,20 @@
     justify-content: center;
     align-items: start;
     overflow: hidden;
-    padding: 70px 50px;
+    padding: 70px 0px;
  }
 .transportHomePage .project > p{
     text-align: center;
     font-size: 17px;
+    padding: 0px 50px;
 }
 .transportHomePage .project h1{
     text-align: start;
     font-size: 50px;
+    padding: 0px 50px;
 }
 .transportHomePage .project .projectSec{
+    padding: 0px 50px;
     width: 100%;
     display: flex;
     justify-content: start;
@@ -615,12 +568,12 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    background-color: #02254B;
+    background: linear-gradient(to bottom, white, #02254B);
     padding-top: 60px;
 }
 .transportHomePage .Coverage h1,
 .transportHomePage .Coverage h5{
-    color: white;
+    /* color: white; */
 }
 
 .transportHomePage .Coverage div{
@@ -654,12 +607,19 @@
     }
 
     /* whoWeAre */
+    .transportHomePage .whoWeAre {
+        width: 90%;
+    }
     .transportHomePage .whoWeAre .wItemSec {
+        width: 100%;
         display: flex;
+        flex-direction: column;
+        padding: 0px;
+        background-color: transparent;
         
     }
-    .transportHomePage .whoWeAre .wItemSec .WImg{
-        display: none;
+    .transportHomePage .whoWeAre .wItemSec .wRightSec{
+        width: 100%;
 
     }
 
@@ -698,22 +658,29 @@
     }
 
     /* WhyChooseUs */
-    .transportHomePage .WhyChooseUs .wcuTopSec {
-        background-color: transparent;
-        display: flex;
-        justify-content: start;
-        align-items: start;
-
+    .transportHomePage .WhyChooseUs > p{
+        text-align: center;
     }
-    .transportHomePage .WhyChooseUs .wcuTopSec h1{
+    .transportHomePage .WhyChooseUs  h1{
         font-size: 30px;
         color: white;
+        padding: 0px;
+        text-align: center;
+        width: 90%;
     }
     .transportHomePage .WhyChooseUs .wcuTopSec .topSecImg{
         display: none;
     }
     .transportHomePage .WhyChooseUs .secSecdiv{
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+    }
+    .transportHomePage .WhyChooseUs .secSecdiv div{
+        width: 100%;
     }
 
     /* howWeWork */
