@@ -1,0 +1,204 @@
+.project{
+    width: 100%;
+    
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    padding-top: 100px;
+    font-size: 20px;
+    color: rgb(204, 204, 204);
+    padding-bottom: 150px;
+    background-image: url(../snake2.0.png);
+    background-repeat: no-repeat;
+    background-position:top center;
+    background-size: cover;
+}
+
+.project .projectH4{
+    font-size: 35px;
+    font-weight: 600;
+    color: #02254B;
+}
+.project .projectP1{
+    width: 90%;
+    text-align: center;
+    color: rgb(108, 107, 107);
+}
+
+.project .ProjectVideoTypeBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    
+    justify-content: center;
+    align-items: center; */
+    width: 70%;
+    gap: 10px;
+    /* padding: 0px; */
+    /* background-color: #8D1FD4; */
+    /* color: white; */
+    z-index: 1;
+}
+
+
+
+.project .ProjectVideoTypeBtn button{
+    color: rgb(129, 129, 129);
+    background-color: #0464ca39;
+    font-size: 15px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.3s ease;
+}
+ 
+.ProjectVideoTypeBtn button:hover{
+    cursor: pointer;
+    background-color: #0178f7;
+    color: white;
+    box-shadow:inset 0px 0px 5px white;
+}
+
+.project .ProjectVideoTypeBtn .currentCatagerybutton{
+    background:linear-gradient(to top left, #02254be2, #0178f7);
+    color: white;
+}
+
+
+
+.projectVideoBox{
+    width: 90%;
+    padding: 10px;
+    /* background-color: rgb(231, 231, 7); */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* grid-template-rows: auto; */
+    /* justify-content: center; */
+    gap: 30px;
+    align-items: center;
+    align-content: center;
+    /* flex-wrap: wrap; */
+    box-sizing: border-box;
+    margin-top: 20px;
+
+}
+
+.videoCon{
+    width: auto;
+    border: 2px solid rgba(0, 0, 0, 0.523);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    
+    position: relative;
+    z-index: 1;
+    
+}
+
+.videoTumbnail{
+    background-image: url(../../assets/chumchaibgImg.jpeg);
+    width: 100%;
+    aspect-ratio: 9/ 16;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease;
+    box-sizing: border-box;
+
+}
+
+
+.videoCon:hover {
+    border: 2px solid #02254B;
+    z-index: 2;
+    /* transform: scale(1.1); */
+    
+    /* box-shadow: inset 0px 0px 30px #8D1FD4; */
+}
+.videoCon:hover .videoTumbnail{
+    /* border: 2px solid #8D1FD4; */
+    transform: scale(1.1);
+    
+    box-shadow: inset 0px 0px 30px #02254B;
+    
+}
+.videoCon .itemDetailSec{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.191);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    z-index: 2;
+    min-height: 50px;
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 0px;
+    backdrop-filter: blur(5px);
+    border-top: 1px solid #02254B;
+}
+.videoCon  .itemDetailSec h4{
+    /* width: 100%; */
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+@media (max-width:768px){
+    .ShowVideoF video{
+         width: auto;
+        height: 70%;
+    }
+/* projectVideoBox  videoCon  proVideo */
+    .projectVideoBox{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .videoCon .videoTumbnail {
+        width: auto;
+        /* height: 100%; */
+    }
+
+    .playButton{
+        font-size: 40px;
+        opacity: 1;
+    }
+
+     .videoCon {
+        width: auto;
+        /* height:30vh; */
+    }
+    
+    .project .showVideoF .videoSec .videoControls{
+    opacity: 1;
+
+}
+.videoCon:hover .videoTumbnail{
+    /* border: 2px solid #8D1FD4; */
+    transform: scale(1.1);
+    
+    box-shadow: inset 0px 0px 30px #9601f9;
+}
+    .project .showVideoF .videoSec .videoControls.hideVideoControls{
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+    .project .ProjectVideoTypeBtn{
+        width: 90%;
+        /* background-color: #8D1FD4; */
+    }
+
+}
