@@ -7,11 +7,13 @@ import Transportaion from './components/transportation/Transportation'
 import HeavyMachinery from './components/heavyMachinery/HeavyMachinery'
 import ContactUs from './components/contactUs/ContactUs'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import ScrollToTop from './components/scrollToTop/ScrollToTop'
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
+      <ScrollToTop />
 
       <Routes>
         <Route path="/" element={<TransportHomePage />} />
