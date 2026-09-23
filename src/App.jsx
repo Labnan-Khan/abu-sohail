@@ -5,14 +5,16 @@ import TransportHomePage from './components/homePage/TransportHomePage'
 // import Projects from './components/projects/Projects'
 import Transportaion from './components/transportation/Transportation'
 import HeavyMachinery from './components/heavyMachinery/HeavyMachinery'
+import ContactUs from './components/contactUs/ContactUs'
 
 function App() {
   return (
     <div>
       <Navbar />
       {/* <TransportHomePage /> */}
-      <Transportaion />
+      {/* <Transportaion /> */}
       {/* <HeavyMachinery /> */}
+      <ContactUs />
       <Footera />
     </div>
   )
