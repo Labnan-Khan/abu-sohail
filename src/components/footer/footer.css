@@ -18,104 +18,54 @@
     /* background-color: #170125; */
 }
 
-.footeraUpside{
-    display: flex;
+
+.footera .footeraUpside{
     width: 90%;
-    /* flex-direction: column; */
-    justify-content:space-between;
-    align-items: center;
-    padding-top: 20px;
-    border-top: 1px solid rgb(132, 132, 132);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: start;
+    gap: 30px;
 }
-
-.footeraUpside .footeraUpsideLeft{
+.footera .footeraUpside .footeraUpsideLeft{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    /* text-align: left; */
+    gap: 10px;
 }
-.footeraUpside .footeraUpsideLeft p{
-    text-align: start;
+.footera .footeraUpside .footeraUpsideLeft p{
+    color: rgb(165, 162, 162);
 }
-
-.footera h4{
-    /* width: 90%; */
+.footera .footeraUpside .footeraUpsideLeft h4{
+    color: white;
     font-size: 20px;
-    font-weight: 600;
-    color: white;
-    /* padding-left: 20px; */
-}
-
-.footera .footerP1{
-    font-size: 15px;
-    font-weight: 100;
-    /* text-align: center; */
-    /* width: 80%; */
-    /* background-color: #f5f2f7; */
-    padding-top: 10px;
-    /* padding-left: 20px; */
 }
 
 
-
-.footera .logoSec h5{
-    color: white;
-    font-size: 17px;
-    width: 100%;
-}
-.footera .logoSec p{
-    color: rgb(171, 168, 168);
-}
-.footera .logoSec{
-    width: auto;
+.footera .footeraUpside .footerLogo{
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    align-items: center;
-    align-content: center;
-    /* flex-wrap: wrap; */
-    gap: 5px;
-    height: 100%;
-}
- 
-.footerLogo .logoSec div{
-    /* width: 30px;
-    height: 30px; */
-    font-size: 20px;
-    padding: 5px;
-    padding-bottom: 0px;
-    display: flex;
     justify-content: center;
-    align-items: center;
-    color: rgb(132, 132, 132);
-    /* background-color: white; */
-    /* border: 2px solid #170125; */
-    border-radius: 10%;
-    transition: all 0.3s ease;
+    gap: 15px;
 }
-
-.footerLogo .logoSec .log:hover{
-    border-bottom: 3px solid #8D1FD4;
-    /* border-left: 3px solid #8D1FD4; */
-    padding-bottom: 15px; 
-     padding-top: 7px;
-     cursor: pointer;
-     color: white;
+.footera .footeraUpside .footerLogo h5{
+    color: white;
+    font-size: 20px;
 }
-
-/* .footerAfterrlogo{
+.footera .footeraUpside .footerLogo div{
     display: flex;
-    gap: 5px;
     justify-content: start;
-    align-items: start;
-    border-bottom:1px solid black ;
+    align-items: center;
+    gap: 15px;
+    color: rgb(154, 152, 152);
+}
+.footera .footeraUpside .footerLogo div span{
+    display: flex;
+    font-size: 25px;
+    color: white;
 }
 
-.footerAfterrlogo:hover{
-    cursor: pointer;
-    border-bottom: 1px solid #8D1FD4;
-} */
 
 .footerDown{
     display:flex ;
@@ -139,6 +89,7 @@
     padding-top: 0px;
     height: 70px;
 }
+/* jsdajdsjd */
 .downSection div{
     display: flex;
     justify-content: center;
@@ -147,13 +98,13 @@
 }
 
 @media screen and (max-width: 765px) {
-    .footeraUpside {
-        width: 90%;
+    
+    .footera .footeraUpside {
+        
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
         align-items: start;
-        gap: 30px;
-        text-align: center;
+        gap: 40px;
     }
     
     .footera .logoSec{

@@ -2,9 +2,11 @@ import React from 'react'
 import './footer.css'
 import { PiXLogo } from 'react-icons/pi'
 import { ImYoutube } from 'react-icons/im'
-import { FaFacebookF, FaInstagram, FaMapMarkerAlt } from 'react-icons/fa'
+import { FaFacebookF, FaInstagram, FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa'
 import { BiLogoGmail, BiLogoTiktok } from 'react-icons/bi'
 import { TfiLinkedin, TfiPinterest } from 'react-icons/tfi'
+import { FaLocationDot } from 'react-icons/fa6'
+import { TbMailFilled } from 'react-icons/tb'
 function Footera() {
   return (
     <>
@@ -18,15 +20,12 @@ function Footera() {
           </div>
 
           <div className='footerLogo'>
-            <div className='logoSec' >
-              <h5>Contact us through email</h5>
-              <p>email: info@rayztechsolutions.com</p>
-              
-
-
-            </div>
-            
+            <h5>Contact us</h5>
+            <div><span><TbMailFilled /></span>info@rayztechsolutions.com</div>
+            <div><span><FaPhoneAlt /></span>+971 50 163 3959</div>
+            <div><span><FaLocationDot /></span>Thoban industrial area fujairah United Arab Emirates</div>
           </div>
+
         </div>
 
           <div className='footerDown'>
