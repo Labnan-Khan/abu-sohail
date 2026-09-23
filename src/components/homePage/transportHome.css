@@ -120,7 +120,7 @@
 }
 
 
-/* whoWeAre */
+/* whoWeAre */    
 .transportHomePage .whoWeAre{
     width: 90%;
     display: flex;
@@ -138,8 +138,6 @@
     width: 90%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    justify-content: center;
-    align-items: center;
     gap: 20px;
     padding: 20px 0px;
     background-color: #02254b1b;
@@ -170,6 +168,7 @@
     margin-bottom: 20px;
 }
 .transportHomePage .whoWeAre .wItemSec .wRightSec div{
+    width: 100%;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -180,11 +179,6 @@
 }
 .transportHomePage .whoWeAre .wItemSec .wRightSec div:last-child{
     border: none;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0px;
 }
 .transportHomePage .whoWeAre .wItemSec .wRightSec div span{
     color: white;
@@ -197,23 +191,10 @@
     border-radius: 50%;
 }
 .transportHomePage .whoWeAre .wItemSec .wRightSec div p{
-    color: black;
+    color: rgb(64, 63, 63);
     font-size: 18px;
 }
-.transportHomePage .whoWeAre .wItemSec .wRightSec button{
-    width: fit-content;
-    font-size: 17px;
-    background-color: white;
-    color: #02254B;
-    padding: 15px;
-    border-radius: 10px;
-    border: 1px solid #02254B;
-    transition: all 0.3s ease;
-    &:hover{
-        background-color: white;
-        color: #02254B;
-    }
-}
+
 
 /* whatWeDo */
 .transportHomePage .whatWeDo{
@@ -373,7 +354,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 /* pad: ; */
-    padding: 0px 10px;
+    padding: 0px 40px;
 }
 .transportHomePage .WhyChooseUs .secSecdiv div{
     display: flex;
@@ -671,6 +652,8 @@
     /* WhyChooseUs */
     .transportHomePage .WhyChooseUs > p{
         text-align: center;
+        width: 90%;
+        padding: 0px;
     }
     .transportHomePage .WhyChooseUs  h1{
         font-size: 30px;
@@ -678,6 +661,7 @@
         padding: 0px;
         text-align: center;
         width: 90%;
+        padding: 0px;
     }
     .transportHomePage .WhyChooseUs .wcuTopSec .topSecImg{
         display: none;
@@ -688,6 +672,8 @@
         justify-content: center;
         align-items: center;
         width: 100%;
+        padding: 0px 20px;
+
         
     }
     .transportHomePage .WhyChooseUs .secSecdiv div{

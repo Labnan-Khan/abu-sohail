@@ -12,6 +12,7 @@ function ContactUs() {
     const [budget, setBudget] = useState("Up to $10k");
 
     const [copyEmailIcon, setCopyemailIcon]= useState(false)
+    const [copyNumberIcon, setCopyNumberlIcon]= useState(false)
     const copyemail= ()=>{
         
         navigator.clipboard.writeText("info@rayztechsolutions.com")
@@ -102,9 +103,13 @@ function ContactUs() {
                         </div>
                         <span onClick={copyemail}>{copyEmailIcon? <IoMdCheckmark />: <IoCopyOutline />}</span>
                     </div>
-                    {/* <div>
-                        <span><FiPhoneCall /></span>
-                        <p>Book a calll</p>
+
+                    {/* <div className='lefttherddivUpSection'>
+                        <div>
+                            <span><FiPhoneCall /></span>
+                            <p>+971 50 163 3959</p>
+                        </div>
+                        <span onClick={copyemail}>{copyNumberIcon? <IoMdCheckmark />: <IoCopyOutline />}</span>
                     </div> */}
                 </div>
             </div>
