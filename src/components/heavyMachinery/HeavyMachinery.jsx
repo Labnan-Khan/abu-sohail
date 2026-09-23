@@ -71,30 +71,12 @@ const machinery =[
     }
 ]
 
-    // useEffect(() => {
-    //     AOS.init({duration: 2000,
-    //          once: false,
-    //          offset:0,
-    //         anchorPlacement: 'top-bottom'});
-    // }, []);
-// handle scoll when video open
-
-   
-
-  
-
-
-
-
-
-// const selectedCategory = videoTypeListBtn[currentCatageryBtn] // it will be used
-
-// const filteredVideos =
-//   selectedCategory === "All categories"
-//     ? videosData
-//     : videosData.filter((item) =>
-//         item.categories.includes(selectedCategory)
-//       );
+const filteredMachinery =
+    currentCatageryBtn === 0
+        ? machinery
+        : machinery.filter(
+            (item, index) => index === currentCatageryBtn - 1
+        )
 
 
   return (
@@ -119,7 +101,7 @@ const machinery =[
 
         <div className='projectVideoBox'>
 
-            {machinery.map((item,index)=>{
+            {filteredMachinery.map((item,index)=>{
                 return  (
                   <div key={index} className="videoCon"  >
                     <div className='videoTumbnail'  style={{ backgroundImage: `url(${item.img})` }}  >
@@ -144,8 +126,6 @@ const machinery =[
     </div>
     
 
-    {/* <FollowUs /> */}
-    {/* <Testimonial /> */}
     </>
   )
 }
