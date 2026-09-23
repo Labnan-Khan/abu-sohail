@@ -120,7 +120,7 @@
     z-index: 2;
     /* transform: scale(1.1); */
     
-    /* box-shadow: inset 0px 0px 30px #8D1FD4; */
+    box-shadow: inset 0px 0px 100px #02254B;
 }
 .videoCon:hover .videoTumbnail{
     /* border: 2px solid #8D1FD4; */
@@ -189,7 +189,7 @@
     /* border: 2px solid #8D1FD4; */
     transform: scale(1.1);
     
-    box-shadow: inset 0px 0px 30px #9601f9;
+    /* box-shadow: inset 0px 0px 30px #9601f9; */
 }
     .project .showVideoF .videoSec .videoControls.hideVideoControls{
     opacity: 0;

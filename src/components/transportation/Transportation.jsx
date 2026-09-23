@@ -1,16 +1,18 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './transportation.css'
-import { FaPause, FaPlay, FaPlayCircle, FaRegWindowClose } from 'react-icons/fa'
-import { IoIosPlay, IoMdClose } from 'react-icons/io'
-// import Testimonial from '../testimonial/Testimonial'
-// import AOS from "aos";
-// import "aos/dist/aos.css";
-import { GiPlayButton } from 'react-icons/gi'
-import { GoUnmute } from 'react-icons/go'
-import { ImVolumeHigh, ImVolumeMute2 } from 'react-icons/im'
-import { FaCirclePlay } from 'react-icons/fa6'
-import { HiMiniPlay } from 'react-icons/hi2'
 
+import himg1 from './himg1.jpeg'
+import himg2 from './himg2.jpeg'
+import himg3 from './himg3.avif'
+import himg4 from './himg4.webp'
+import himg5 from './himg5.jpg'
+import himg6 from './himg6.jpeg'
+import himg7 from './himg7.jpeg'
+import himg8 from './himg8.jpeg'
+import himg9 from './himg9.jpg'
+import himg10 from './himg10.jpeg'
+import himg11 from './himg11.jpg'
+import himg12 from './himg12.webp'
 
 function Transportaion() {
     const [videoSize, setVideoSize] = useState(false)
@@ -20,54 +22,54 @@ const allcateg = [{name:"All categories", details:""}]
 
 const machinery = [
     {
-        name: "Excavator",
-        details: "Powerful earthmoving equipment designed for digging, trenching, demolition, and material handling across demanding job sites."
+        name: "Heavy Trucks",
+        img: himg1
     },
     {
-        name: "Bulldozer",
-        details: "Heavy-duty machinery built for pushing, grading, clearing, and leveling large volumes of soil and construction materials."
+        name: "Cargo Trucks",
+        img: himg2
     },
     {
-        name: "Wheel Loader",
-        details: "Versatile loading equipment used for moving, loading, and transporting aggregates, soil, debris, and other materials."
+        name: "Trailer Trucks",
+        img: himg3
     },
     {
-        name: "Backhoe Loader",
-        details: "Multi-purpose equipment combining digging and loading capabilities for construction, excavation, utility, and roadwork."
+        name: "Flatbed Trucks",
+        img: himg4
     },
     {
-        name: "Motor Grader",
-        details: "Precision grading machinery used to create smooth, level surfaces for roads, foundations, drainage, and site preparation."
+        name: "Lowbed Trailers",
+        img: himg5
     },
     {
-        name: "Dump Truck / Tipper",
-        details: "High-capacity hauling vehicles designed to transport and unload soil, gravel, sand, rock, and construction materials efficiently."
+        name: "Tanker Trucks",
+        img: himg6
     },
     {
-        name: "Road Roller / Compactor",
-        details: "Specialized equipment used to compact soil, asphalt, and aggregate surfaces for strong and durable road construction."
+        name: "Dump Trucks",
+        img: himg7
     },
     {
-        name: "Crane / Mobile Crane",
-        details: "Heavy lifting equipment designed to safely move and position large materials, machinery, and structural components on-site."
+        name: "Tipper Trucks",
+        img: himg8
     },
     {
-        name: "Skid Steer Loader",
-        details: "Compact and highly maneuverable equipment ideal for loading, excavation, site clearing, and work in confined construction areas."
+        name: "Container Trucks",
+        img: himg9
     },
     {
-        name: "Telehandler",
-        details: "Flexible lifting machinery with an extendable boom, designed for moving materials to elevated or difficult-to-reach locations."
+        name: "Car Carrier Trucks",
+        img: himg10
     },
     {
-        name: "Forklift",
-        details: "Reliable material-handling equipment used to lift, move, and organize heavy loads across warehouses, yards, and construction sites."
+        name: "Pickup Trucks",
+        img: himg11
     },
     {
-        name: "Rock Breaker / Hydraulic Breaker",
-        details: "High-impact attachment designed for breaking concrete, rocks, foundations, and other hard materials during demanding projects."
+        name: "SUVs",
+        img: himg12
     }
-];
+]
 
     // useEffect(() => {
     //     AOS.init({duration: 2000,
@@ -104,9 +106,8 @@ const machinery = [
 
 
 
-        <h4 className='projectH4'>Powering Every Major Project</h4>
-      <p className='projectP1'> Explore our range of heavy machinery, engineered for strength, efficiency, and dependable performance across demanding job sites.</p>
-
+        <h4 className='projectH4'>Transportation Solutions That Move Business</h4>
+        <p className='projectP1'>From heavy cargo and construction materials to everyday loads, our versatile fleet delivers dependable transportation solutions with efficiency, safety, and on-time service.</p>
 
         <div className='ProjectVideoTypeBtn'>
             {[...allcateg, ...machinery].map((btn,index) =>{
@@ -120,8 +121,8 @@ const machinery = [
             {machinery.map((item,index)=>{
                 return  (
                   <div key={index} className="videoCon"  >
-                    {/* <div className='videoTumbnail'  style={{ backgroundImage: `url(${item.thumbnail})` }}  > */}
-                    <div className='videoTumbnail'>
+                    <div className='videoTumbnail'  style={{ backgroundImage: `url(${item.img})` }}  >
+                    {/* <div className='videoTumbnail'> */}
                       
                     </div>
                     <div className='itemDetailSec'>

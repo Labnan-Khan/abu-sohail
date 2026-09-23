@@ -11,8 +11,8 @@ function App() {
     <div>
       <Navbar />
       {/* <TransportHomePage /> */}
-      {/* <Transportaion /> */}
-      <HeavyMachinery />
+      <Transportaion />
+      {/* <HeavyMachinery /> */}
       <Footera />
     </div>
   )
