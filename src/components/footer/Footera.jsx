@@ -13,7 +13,7 @@ function Footera() {
 
         <div className='footeraUpside'>
           <div className='footeraUpsideLeft'>
-            <h4 className='footerH4'>ABU ABU SUHAIL</h4>
+            <h4 className='footerH4'>ABU SUHAIL</h4>
             <p className='footerP1'>Reliable Transportation, Heavy Machinery, Professional Service</p>
           </div>
 

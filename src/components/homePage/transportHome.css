@@ -20,12 +20,7 @@
     font-size: 40px;
     text-align: center;
 }
-.transportHomePage h1 span{
-    color: #F5B82E;
-    /* font-family: cursive; */
-    width: fit-content;
-    font-weight: 900;
-}
+
 .transportHomePage p{
     color: rgb(132, 131, 131);
 }
@@ -77,7 +72,7 @@
     flex-wrap: wrap;
     padding-left: 40px;
 }
-.transportHomePage .heroSection .heroBtn button{
+.transportHomePage .heroSection .heroBtn a button{
     background-color: #02254B;
     color: white;
     padding: 10px;
@@ -91,7 +86,7 @@
         border: 1px solid black;
     }
 }
-.transportHomePage .heroSection .heroBtn button:last-child{
+.transportHomePage .heroSection .heroBtn a:last-child button{
     background-color: white;
     border: 1px solid black;
     color: black;
@@ -360,18 +355,25 @@
     background-color: #02254B;
     color: white;
     transform: translateY(-100px);
-    padding: 100px 40px;
+    padding: 100px 0px;
  }
 
+.transportHomePage .WhyChooseUs > p{
+
+    padding: 0px 30px;
+}
 .transportHomePage .WhyChooseUs h1{
     color: white;
     text-align: start;
+    padding: 0px 30px;
 }
 .transportHomePage .WhyChooseUs .secSecdiv{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+/* pad: ; */
+    padding: 0px 10px;
 }
 .transportHomePage .WhyChooseUs .secSecdiv div{
     display: flex;
@@ -474,6 +476,9 @@
 .transportHomePage .project .projectSec .projectItem:last-child h3{
     font-size: 40px;
 }
+.transportHomePage .project .projectSec .projectItem:last-child a{
+    width: 100%;
+}
 .transportHomePage .project .projectSec .projectItem:last-child button{
     width: 90%;
     padding: 10px;
@@ -569,6 +574,10 @@
     gap: 10px;
     background: linear-gradient(to bottom, white, #02254B);
     padding-top: 60px;
+    padding: 20px;
+}
+.transportHomePage .Coverage > p{
+    text-align: center;
 }
 .transportHomePage .Coverage h1,
 .transportHomePage .Coverage h5{

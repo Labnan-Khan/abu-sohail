@@ -14,6 +14,7 @@ import whyimg3 from '../../assets/whyimg3.jpg'
 import whyimg4 from '../../assets/whyimg4.jpg'
 import whyimg5 from '../../assets/whyimg5.jpg'
 import whyimg6 from '../../assets/whyimg6.avif'
+import { Link } from 'react-router-dom'
 
 function TransportHomePage() {
 
@@ -100,8 +101,8 @@ const projectData = [
             </div>
 
             <div className='heroBtn'>
-                <button>Contact Us</button>
-                <button>Our Services</button>
+                <Link to={"/contact"}><button>Contact Us</button></Link>
+                <Link to={"/transportation"}><button>Transportation</button></Link>
             </div>
             
         </div>
@@ -265,7 +266,7 @@ const projectData = [
                 to support construction, infrastructure, logistics, and
                 project-based requirements.
             </p>
-            <button>Explore Our Services</button>
+            <Link to={"/heavy-machinery"}><button>Our Heavy Machinery</button></Link>
         </div>
     </div>
         </div>
@@ -293,7 +294,7 @@ const projectData = [
                     
                     <h3>Heavy Cargo Movement</h3>
                     <p>Safe transportation for heavy and oversized cargo.</p>
-                    <button>Explore Project</button>
+                    <Link to={"/contact"}><button>Let's Connect</button></Link>
                 </div>
 
             </div>
@@ -380,7 +381,7 @@ const projectData = [
         <div className='homeContactUs'>
             <h1>READY TO MOVE YOUR  <span>NEXT PROJECT</span>?</h1>
             <p>Let’s discuss your transportation requirements and work together to find a safe, reliable, and efficient solution tailored to the specific needs of your next project.</p>
-            <button>Contact Us</button>
+            <Link to={"/contact"}><button>Contact Us</button></Link>
         </div>
 
     </div>
