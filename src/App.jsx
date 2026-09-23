@@ -6,17 +6,22 @@ import TransportHomePage from './components/homePage/TransportHomePage'
 import Transportaion from './components/transportation/Transportation'
 import HeavyMachinery from './components/heavyMachinery/HeavyMachinery'
 import ContactUs from './components/contactUs/ContactUs'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <Navbar />
-      {/* <TransportHomePage /> */}
-      {/* <Transportaion /> */}
-      {/* <HeavyMachinery /> */}
-      <ContactUs />
+
+      <Routes>
+        <Route path="/" element={<TransportHomePage />} />
+        <Route path="/transportation" element={<Transportaion />} />
+        <Route path="/heavy-machinery" element={<HeavyMachinery />} />
+        <Route path="/contact" element={<ContactUs />} />
+      </Routes>
+
       <Footera />
-    </div>
+    </BrowserRouter>
   )
 }
 

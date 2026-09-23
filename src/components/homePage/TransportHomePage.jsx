@@ -81,7 +81,7 @@ const projectData = [
 
         <div className='heroSection'>
             <div className='herobgImg'></div>
-            <h5>TRANSPORTATION  & Heavy Machinery</h5>
+            {/* <h5>TRANSPORTATION  & Heavy Machinery</h5> */}
             <h1>Moving Your Business Forward</h1>
             <p>Reliable transportation solutions built around safety, efficiency, and dependable delivery.</p>
             <div className='heroFoter'>
@@ -90,11 +90,11 @@ const projectData = [
                     <p>Years Experience</p>
                 </div>
                 <div>
-                    <span>{<CountUpAnimation end={100}/>} +</span>
+                    <span>{<CountUpAnimation end={500}/>} +</span>
                     <p>Fleet Vehicles</p>
                 </div>
                 <div>
-                    <span>{<CountUpAnimation end={500}/>} +</span>
+                    <span>{<CountUpAnimation end={100}/>} +</span>
                     <p>Projects Completed</p>
                 </div>
             </div>

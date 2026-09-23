@@ -13,18 +13,14 @@ function Footera() {
 
         <div className='footeraUpside'>
           <div className='footeraUpsideLeft'>
-            <h4 className='footerH4'>ABU SOHAIL TRANSPORT</h4>
-            <p className='footerP1'>Creative Support • Dedicated Editors • Reliable Delivery</p>
+            <h4 className='footerH4'>ABU ABU SUHAIL</h4>
+            <p className='footerP1'>Reliable Transportation, Heavy Machinery, Professional Service</p>
           </div>
           <div className='footerLogo'>
             <div className='logoSec' >
+              <h5>Contact us through email</h5>
+              <p>email: info@rayztechsolutions.com</p>
               
-
-              <a href="https://www.tiktok.com/@rayzmedia.com?_r=1&_t=ZS-95UE7wuPuOg"  target="_blank" rel="noopener noreferrer"><div className='log'><BiLogoTiktok /></div></a>
-              <a href="https://www.instagram.com/rayzmedia?igsh=ODdkNXR1czV2dWox"  target="_blank" rel="noopener noreferrer"><div className='log'><FaInstagram /></div></a>
-              <a href="https://www.linkedin.com/company/rayzmedia/?viewAsMember=true"  target="_blank" rel="noopener noreferrer"><div className='log'><TfiLinkedin  /></div></a>
-              <a href="mailto:Admin@rayzmedia.com?subject=Editing%20Services%20Request&body=Hi,%0A%0AI’d%20like%20to%20get%20started%20with%20your%20editing%20services.%20Please%20let%20me%20know%20the%20next%20steps.%0A%0AProject%20details:%0A%0AName:%0ACompany:%0AType%20of%20Content:%0ANumber%20of%20videos:%0ATurnaround%20Time:%0A%0AThanks,"  target="_blank" rel="noopener noreferrer"> <div className='log'><BiLogoGmail /></div></a>       
-
 
 
             </div>
@@ -34,7 +30,7 @@ function Footera() {
 
           <div className='footerDown'>
             <div className='downSection'>
-            <p>© 2026 ABU SOHAIL TRANSPORT All Rights Reserved</p>
+            <p>© 2026 ABU SUHAIL All Rights Reserved</p>
             <div>
               <p>Privacy Policy</p>
               <p>Terms</p>

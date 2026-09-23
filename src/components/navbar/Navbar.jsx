@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './navbar.css'
 import { RiMenuLine,  RiMenuUnfold4Line } from 'react-icons/ri';
+import { Link } from 'react-router-dom';
 // import { Link } from 'react-router-dom';
 function Navbar() {
     const [showNavbar, setShowNavbar] = useState(true)
@@ -63,17 +64,17 @@ function Navbar() {
   return (
     <>
     <div className={`nav ${showNavbar ? "show" : "hide"}`} >
-        <div className='navName'><a to="/" >ABU SOHAIL</a></div>
+        <div className='navName'><Link to="/" >ABU SUHAIL</Link></div>
         <div className='navMenu' onClick={ ()=>{ setClickMenu(!clickMenu); setDropMenu(!dropMenu)} }>{(!clickMenu)?<RiMenuLine /> :<RiMenuUnfold4Line/> } </div>
         
         <div className={clickMenu? "show" : ""} onClick={ ()=>{ setClickMenu(!clickMenu); setDropMenu(!dropMenu)} }></div>
         <ul className={`navLi ${(dropMenu)? " navLiM" : ""}`} onClick={ ()=>{ setClickMenu(!clickMenu); setDropMenu(!dropMenu)} }>
-            <li><a to="/" >Home</a></li>
-            <li><a to="/journal" >Services</a></li>
-            <li><a to="/ourPlan" >Transportaion</a></li>
-            <li><a to="/ourPlan" >Heavy Machinery</a></li>
-            <li><a to="/projects" >Projects</a></li>
-            <li><a to="/contact" >Contact Us</a></li>
+            <li><Link to="/" >Home</Link></li>
+            {/* <li><link to="/journal" >Services</link></li> */}
+            <li><Link to="/transportation" >Transportaion</Link></li>
+            <li><Link to="/heavy-machinery" >Heavy Machinery</Link></li>
+            {/* <li><Link to="/projects" >Projects</Link></li> */}
+            <li><Link to="/contact" >Contact Us</Link></li>
         </ul>
     </div>
 

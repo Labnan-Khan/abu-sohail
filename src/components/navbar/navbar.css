@@ -19,7 +19,7 @@
     /* box-shadow: -1px 10px 6px black; */
     /* border-bottom: 2px solid rgb(216, 21, 21); */
 }
-.nav .navName{
+.nav .navName {
     padding-left: 6%;
     font-size: 28px;
     font-weight:600 ;
@@ -27,6 +27,9 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
+}
+.nav .navName a{
+    text-decoration: none;
 }
 
 
