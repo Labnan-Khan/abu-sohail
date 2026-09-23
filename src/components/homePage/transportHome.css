@@ -22,7 +22,7 @@
 }
 .transportHomePage h1 span{
     color: #F5B82E;
-    font-family: cursive;
+    /* font-family: cursive; */
     width: fit-content;
     font-weight: 900;
 }
@@ -38,7 +38,6 @@
     align-items: center;
     gap: 10px;
     position: relative;
-    padding-bottom: 50px;
 }
 
 .transportHomePage .heroSection > p{
@@ -358,7 +357,7 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
-    background-color: black;
+    background-color: #02254B;
     color: white;
     transform: translateY(-100px);
     padding: 100px 40px;

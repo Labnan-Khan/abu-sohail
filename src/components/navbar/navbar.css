@@ -21,15 +21,39 @@
 }
 .nav .navName {
     padding-left: 6%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+.nav .navName a p{
     font-size: 28px;
-    font-weight:600 ;
+    font-weight:600;
+    
      background: linear-gradient(90deg, #013579, #358AD0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
 }
 .nav .navName a{
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+}
+.nav .navName a div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../assets/mainlogoimg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    aspect-ratio: 12/9;
 }
 
 

@@ -64,7 +64,7 @@ function Navbar() {
   return (
     <>
     <div className={`nav ${showNavbar ? "show" : "hide"}`} >
-        <div className='navName'><Link to="/" >ABU SUHAIL</Link></div>
+        <div className='navName'><Link to="/" > <div></div> <p>ABU SUHAIL</p></Link></div>
         <div className='navMenu' onClick={ ()=>{ setClickMenu(!clickMenu); setDropMenu(!dropMenu)} }>{(!clickMenu)?<RiMenuLine /> :<RiMenuUnfold4Line/> } </div>
         
         <div className={clickMenu? "show" : ""} onClick={ ()=>{ setClickMenu(!clickMenu); setDropMenu(!dropMenu)} }></div>

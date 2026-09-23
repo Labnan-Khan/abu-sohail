@@ -107,14 +107,8 @@ const projectData = [
         </div>
 
         <div className='whoWeAre'>
-            <h5>Who We Are</h5>
-            <h1>Transportation Built Around <span>Your Business</span></h1>
-            <p>
-                We provide dependable transportation solutions designed to keep businesses,
-                projects, and supply chains moving. From everyday deliveries to complex
-                transportation requirements, our team focuses on safety, efficiency, and
-                reliable service from pickup to final delivery.
-            </p>
+            <h1>Built to Move What Builds the Future</h1>
+            <p>Reliable transportation and heavy equipment solutions built to support your projects from start to finish.</p>
 
             <div className='wItemSec'>
                 <div className='wRightSec'>
@@ -139,9 +133,9 @@ const projectData = [
                         <span><IoMdCheckmark /></span>
                         <p>Dump Truck & Tipper Services </p>
                     </div>
-                    <div>
+                    {/* <div>
                         <button>Explore all Servies</button>
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className='wRightSec'>
@@ -166,9 +160,9 @@ const projectData = [
                         <span><IoMdCheckmark /></span>
                         <p>Lifting & Equipment Support</p>
                     </div>
-                    <div>
+                    {/* <div>
                         <button>Explore all Services</button>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 
@@ -226,9 +220,7 @@ const projectData = [
         <div className='whatWeDo'>
     
 
-    <h1>
-        Reliable Solutions for <span>Every Project.</span>
-    </h1>
+    <h1>Engineering Solutions That Move Projects Forward </h1>
 
     <p>
         From transportation to heavy machinery, we provide dependable
