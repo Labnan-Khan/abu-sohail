@@ -16,6 +16,7 @@ function Footera() {
             <h4 className='footerH4'>ABU ABU SUHAIL</h4>
             <p className='footerP1'>Reliable Transportation, Heavy Machinery, Professional Service</p>
           </div>
+
           <div className='footerLogo'>
             <div className='logoSec' >
               <h5>Contact us through email</h5>
