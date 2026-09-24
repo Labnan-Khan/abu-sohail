@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 50px;
 }
 
 .transportHomePage h5{
@@ -478,6 +478,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0px;
  }
 .transportHomePage .project > p{
     text-align: center;
@@ -623,7 +624,7 @@
         height: 20px;
     }
     .transportHomePage .whoWeAre .wItemSec .categoryBtnSec div span.right{
-        left: 23px;
+        left: 24px;
     }
     .transportHomePage .whoWeAre .wItemSec .categoryBtnSec h4{
         font-size: 10px;
