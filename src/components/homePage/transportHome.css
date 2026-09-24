@@ -35,8 +35,12 @@
     position: relative;
 }
 
+.transportHomePage .heroSection h1{
+    width: 90%;
+}
 .transportHomePage .heroSection > p{
     text-align: center;
+    width: 90%;
 }
 .transportHomePage .heroSection h5{
     color: #02254B;
@@ -98,18 +102,15 @@
 }
 
 .transportHomePage .heroSection .heroFoter{
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
     margin: 10px 0px;
-    /* background-color: #01346a62; */
+    background-color: #02254B;
     padding: 20px;
-    border-radius: 20px;
-    border: 1px solid #02254B;
-    box-shadow: inset 0px 0px 10px #02254B;
 }
 .transportHomePage .heroSection .heroFoter div{
     display: flex;
@@ -125,7 +126,7 @@
 .transportHomePage .heroSection .heroFoter div span{
     display: flex;
     font-size: 30px;
-    color: black;
+    color: white;
 }
 
 
@@ -160,6 +161,8 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+    /* background-color: black; */
+    padding-top: 15px;
 }
 .transportHomePage .whoWeAre .wItemSec .categoryBtnSec h4{
     color: #777;
@@ -206,7 +209,7 @@
     gap: 10px;
     background-color: #02254b45;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 30px;
     transition: all 0.3s ease;
     /* cursor: pointer; */
     position: relative;
@@ -323,7 +326,7 @@
         box-shadow: 0px 0px 10px black;
     }
 }
-.transportHomePage .whatWeDo .weDoSec div:last-child{
+/* .transportHomePage .whatWeDo .weDoSec div:last-child{
     grid-column: span 3;
     display: flex;
     justify-content: center;
@@ -332,7 +335,7 @@
     color: white;
     gap: 10px;
     padding: 20px 1px;
-}
+} */
 
 .transportHomePage .whatWeDo .weDoSec div h3{
     color: white;
@@ -359,14 +362,14 @@
     align-items: center;
 }
 
-.transportHomePage .whatWeDo .weDoSec div:last-child h3{
+/* .transportHomePage .whatWeDo .weDoSec div:last-child h3{
     color: white;
     font-size: 35px;
     text-align: center;
     backdrop-filter: blur(0px);
     background-color: transparent;
     height: auto;
-}
+} */
 .transportHomePage .whatWeDo .weDoSec div:last-child p{
     color: rgb(0, 0, 0);
     text-align: center;
@@ -397,7 +400,7 @@
     color: white;
 }
 .transportHomePage .ourFleet > p{
-    text-align: center;
+    /* text-align: center; */
     font-size: 17px;
     padding: 0px 40px;
 }

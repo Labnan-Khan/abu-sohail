@@ -187,12 +187,12 @@ const handleNextSubCategory = () => {
         <div className='heroSection'>
             <div className='herobgImg'></div>
             <h1>Moving Your Business Forward</h1>
-            <p>Reliable transportation solutions built around safety, efficiency, and dependable delivery.</p>
+            <p>Powering Complex Construction & Engineering Projects with Heavy Equipment and Earthmoving Solutions. We provide specialised machinery and earthmoving capabilities for demanding construction and infrastructure projects, combining operational precision, robust equipment and assured execution. From major earthworks to complex site development, we deliver the capability and reliability required to advance critical projects with confidence.</p>
             
-            <div className='heroBtn'>
+            {/* <div className='heroBtn'>
                 <Link to={"/contact"}><button>Contact Us</button></Link>
                 <Link to={"/transportation"}><button>Transportation</button></Link>
-            </div>
+            </div> */}
             
             <div className='heroFoter'>
                 <div>
@@ -259,7 +259,7 @@ const handleNextSubCategory = () => {
 
         <div className='ourFleet'>
             <h1>The Right Equipment <br />for <span>Every Load</span></h1>
-            <p>Reliable vehicles and equipment for different loads and transportation needs.</p>
+            <p>Purpose-Built Equipment, Exacting Execution and Enduring Reliability — Precisely Aligned to the Demands of Every Load, Project and Terrain.</p>
             
             <div className='ourFleetSec'>
 
@@ -344,7 +344,7 @@ const handleNextSubCategory = () => {
             {/* <p>Services tailored to your cargo, machinery, project scope, and operational requirements.</p> */}
         </div>
 
-        <div>
+        {/* <div>
             <h3>Built to Move. Equipped to Deliver.</h3>
             <p>
                 We bring transportation and heavy machinery solutions together
@@ -352,7 +352,7 @@ const handleNextSubCategory = () => {
                 project-based requirements.
             </p>
             <Link to={"/heavy-machinery"}><button>Our Heavy Machinery</button></Link>
-        </div>
+        </div> */}
     </div>
         </div>
 
