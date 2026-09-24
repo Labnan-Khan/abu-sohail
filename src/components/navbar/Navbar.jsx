@@ -61,10 +61,22 @@ function Navbar() {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
-  return (
+  return ( 
     <>
     <div className={`nav ${showNavbar ? "show" : "hide"}`} >
-        <div className='navName'><Link to="/" > <div></div> <p>ABU SUHAIL</p></Link></div>
+        <div className='navName'>
+            <Link to="/" >
+                <div className='navLogo'></div>
+                <div className='navMainRight'>
+                    <p>ABU SUHAIL</p>
+                    <div>
+                        <span>Heavy haulage</span>
+                        <span>Machinery</span>
+                        <span>Logistics</span>
+                    </div>
+                </div> 
+            </Link>
+        </div>
         <div className='navMenu' onClick={ ()=>{ setClickMenu(!clickMenu); setDropMenu(!dropMenu)} }>{(!clickMenu)?<RiMenuLine /> :<RiMenuUnfold4Line/> } </div>
         
         <div className={clickMenu? "show" : ""} onClick={ ()=>{ setClickMenu(!clickMenu); setDropMenu(!dropMenu)} }></div>

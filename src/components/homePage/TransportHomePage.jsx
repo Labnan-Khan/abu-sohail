@@ -1,10 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './transportHome.css'
 import { IoMdCheckmark } from 'react-icons/io'
-import { FaBoxes, FaCheckCircle, FaClipboardList, FaCogs, FaFileInvoiceDollar, FaHeadset, FaMapMarkerAlt, FaProjectDiagram, FaRoute, FaShieldAlt, FaTools, FaTruck, FaTruckLoading, FaUserTie } from 'react-icons/fa'
-import { GiTruck } from 'react-icons/gi'
-import { BsTruckFlatbed } from 'react-icons/bs'
-import CountUp from '../CountUpAnimation'
+import { FaChevronLeft, FaChevronRight, FaCogs, FaHeadset, FaShieldAlt, FaTools, FaTruck, FaUserTie } from 'react-icons/fa'
+
 import CountUpAnimation from '../CountUpAnimation'
 import Horisontal from '../horizontelAnimation/Horisontal'
 
@@ -76,19 +74,130 @@ const projectData = [
     }
 ];
 
+const ServicesData = {
+
+    transportationItem: [
+        {
+            itemHeading: "Heavy Transport & Specialized Haulage",
+            itemArray: [
+                "Heavy Haulage & Abnormal Load Transportation",
+                "Oversized & Overweight Equipment Haulage",
+                "Heavy Plant & Machinery Transportation",
+                "Low-Bed & Multi-Axle Trailer Transportation",
+                "Specialized Project Cargo Haulage",
+                "Breakbulk & Out-of-Gauge Cargo Transportation",
+                "Industrial Equipment Relocation & Haulage",
+                "Construction Plant Mobilization & Demobilization",
+                "Inter-Project Machinery Transfer",
+                "Heavy Lift & Specialized Transport Logistics"
+            ]
+        },
+        {
+            itemHeading: "Tipper / Bulk Material Services",
+            itemArray: [
+                "Bulk Earthwork Haulage",
+                "Tipper-Based Material Transportation",
+                "Aggregates & Excavated Material Haulage",
+                "Spoil Removal & Disposal Logistics",
+                "Quarry Material Transportation",
+                "Sand, Gravel & Aggregate Haulage",
+                "Construction Waste & Spoil Transportation",
+                "Bulk Fill Material Logistics"
+            ]
+        }
+    ],
+
+    machineryItem: [
+        {
+            itemHeading: "Civil & Earthworks",
+            itemArray: [
+                "Bulk Earthworks & Mass Excavation",
+                "Cut-and-Fill Operations",
+                "Site Grading & Formation Preparation",
+                "Earthmoving & Subgrade Preparation",
+                "Excavation, Trenching & Soil Removal",
+                "Embankment Construction & Formation Works",
+                "Land Reclamation & Terrain Development",
+                "Rock Excavation & Controlled Earth Removal",
+                "Right-of-Way Clearance & Site Preparation",
+                "Subgrade Stabilization & Ground Improvement"
+            ]
+        },
+        {
+            itemHeading: "Heavy Machinery & Plant Operations",
+            itemArray: [
+                "Excavator & Hydraulic Plant Operations",
+                "Crawler Dozer & Track Plant Operations",
+                "Wheel Loader & Material Handling Operations",
+                "Motor Grader & Precision Grading",
+                "Soil Compaction & Densification Works",
+                "Backfilling & Engineered Fill Placement",
+                "Plant-Based Earthmoving Operations",
+                "Heavy Plant Deployment & Site Operations",
+                "Construction Equipment Mobilization",
+                "Specialized Plant & Machinery Deployment"
+            ]
+        },
+        {
+            itemHeading: "Road & Infrastructure Works",
+            itemArray: [
+                "Road Formation & Pavement Preparation",
+                "Subgrade & Subbase Construction",
+                "Road Widening & Earth Formation",
+                "Aggregate Placement & Spreading",
+                "Compaction & Pavement Foundation Works",
+                "Bulk Material Handling & Placement",
+                "Infrastructure Corridor Development",
+                "Access Road Construction & Formation",
+                "Civil Infrastructure Earthworks",
+                "Utility Corridor & Right-of-Way Works"
+            ]
+        }
+    ]
+
+};
+const [serviesCategory, setServiesCategory] = useState("transportationItem");
+const [subCategoryIndex, setSubCategoryIndex] = useState(0); 
+
+
+const handlePrevSubCategory = () => {
+    setSubCategoryIndex((prev) => {
+        if (prev === 0) {
+            return ServicesData[serviesCategory].length - 1;
+        }
+
+        return prev - 1;
+    });
+};
+
+const handleNextSubCategory = () => {
+    setSubCategoryIndex((prev) => {
+        if (prev === ServicesData[serviesCategory].length - 1) {
+            return 0;
+        }
+
+        return prev + 1;
+    });
+};
+
 
   return (
     <div className='transportHomePage'>
 
         <div className='heroSection'>
             <div className='herobgImg'></div>
-            {/* <h5>TRANSPORTATION  & Heavy Machinery</h5> */}
             <h1>Moving Your Business Forward</h1>
             <p>Reliable transportation solutions built around safety, efficiency, and dependable delivery.</p>
+            
+            <div className='heroBtn'>
+                <Link to={"/contact"}><button>Contact Us</button></Link>
+                <Link to={"/transportation"}><button>Transportation</button></Link>
+            </div>
+            
             <div className='heroFoter'>
                 <div>
                     <span>{<CountUpAnimation end={20}/>} +</span>
-                    <p>Years Experience</p>
+                    <p>Years of Experience</p>
                 </div>
                 <div>
                     <span>{<CountUpAnimation end={500}/>} +</span>
@@ -98,73 +207,49 @@ const projectData = [
                     <span>{<CountUpAnimation end={100}/>} +</span>
                     <p>Projects Completed</p>
                 </div>
+                <div>
+                    <span>{<CountUpAnimation end={500}/>} +</span>
+                    <p>Business Partners</p>
+                </div>
             </div>
 
-            <div className='heroBtn'>
-                <Link to={"/contact"}><button>Contact Us</button></Link>
-                <Link to={"/transportation"}><button>Transportation</button></Link>
-            </div>
+            
             
         </div>
 
         <div className='whoWeAre'>
             <h1>Built to Move What Builds the Future</h1>
             <p>Reliable transportation and heavy equipment solutions built to support your projects from start to finish.</p>
-
+            
             <div className='wItemSec'>
-                <div className='wRightSec'>
-                    <h2>Heavy Transportation </h2>
-                    <div>
-                        <span><IoMdCheckmark /></span>
-                        <p>Heavy Equipment Transportation </p>
+
+                <div className='categoryBtnSec'>
+                    <h4 className={`${(serviesCategory == "transportationItem")? "activeCategory " : ""}`}>TRANSPORTATION</h4>
+                    <div onClick={()=>{setSubCategoryIndex(0); (serviesCategory == "transportationItem")? setServiesCategory("machineryItem") : setServiesCategory("transportationItem")}}>
+                        <span className={`${(serviesCategory != "transportationItem")? "right" : ""}`}></span>
                     </div>
-                    <div>
-                        <span><IoMdCheckmark /></span>
-                        <p>Heavy Cargo Transportation </p>
-                    </div>
-                    <div>
-                        <span><IoMdCheckmark /></span>
-                        <p>Car & Vehicle Transportation </p>
-                    </div>
-                    <div>
-                        <span><IoMdCheckmark /></span>
-                        <p>Project Logistics Support </p>
-                    </div>
-                    <div>
-                        <span><IoMdCheckmark /></span>
-                        <p>Dump Truck & Tipper Services </p>
-                    </div>
-                    {/* <div>
-                        <button>Explore all Servies</button>
-                    </div> */}
+                    <h4 className={`${(serviesCategory != "transportationItem")? "activeCategory " : ""}`}>HEAVY MACHINERY</h4>
                 </div>
 
+                
+
                 <div className='wRightSec'>
-                    <h2>Heavy Machinery</h2>
-                    <div>
-                        <span><IoMdCheckmark /></span>
-                        <p>Excavation & Earthmoving </p>
+                    <h2>{ServicesData[serviesCategory][subCategoryIndex].itemHeading}</h2>
+                    {ServicesData[serviesCategory][subCategoryIndex].itemArray.map((item,itex) =>{
+                        return <div>
+                                    {/* <span><IoMdCheckmark /></span> */}
+                                    <p>{item} </p>
+                                </div>
+                    })}
+
+                    <div className='leftrightBtnSec'>
+
+                        <span onClick={ handleNextSubCategory}><FaChevronRight /></span>
+                        <span onClick={ handlePrevSubCategory}><FaChevronLeft /></span>
+
                     </div>
-                    <div>
-                        <span><IoMdCheckmark /></span>
-                        <p>Land Clearing & Site Preparation </p>
-                    </div>
-                    <div>
-                        <span><IoMdCheckmark /></span>
-                        <p>Bulldozing & Ground Preparation </p>
-                    </div>
-                    <div>
-                        <span><IoMdCheckmark /></span>
-                        <p>Compaction & Road Works </p>
-                    </div>
-                    <div>
-                        <span><IoMdCheckmark /></span>
-                        <p>Lifting & Equipment Support</p>
-                    </div>
-                    {/* <div>
-                        <button>Explore all Services</button>
-                    </div> */}
                 </div>
+                
             </div>
 
                 
@@ -352,37 +437,19 @@ const projectData = [
 
         
 
-        <div className='Coverage'>
+        {/* <div className='Coverage'>
             <h5>Coverage</h5>
             <h1>Moving Across the Region.</h1>
             <p>Wherever your project takes you, we're ready to move with it.</p>
             <div></div>
 
-            {/* <div>
-                <h1>Supporting Businesses That Keep Moving.</h1>
-                <p>Transportation services supporting businesses across multiple industries.</p>
-                <div>
-                    <div>
-                        <span></span>
-                        <p>Construction</p>
-                    </div>
-                    <div>
-                        <span></span>
-                        <p>Manufacturing</p>
-                    </div>
-                    <div>
-                        <span></span>
-                        <p>Industrial</p>
-                    </div>
-                </div>
-            </div> */}
-        </div>
+        </div> */}
         
-        <div className='homeContactUs'>
+        {/* <div className='homeContactUs'>
             <h1>READY TO MOVE YOUR  <span>NEXT PROJECT</span>?</h1>
             <p>Let’s discuss your transportation requirements and work together to find a safe, reliable, and efficient solution tailored to the specific needs of your next project.</p>
             <Link to={"/contact"}><button>Contact Us</button></Link>
-        </div>
+        </div> */}
 
     </div>
   )
