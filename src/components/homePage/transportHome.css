@@ -473,7 +473,7 @@
 
 /* project */
 .transportHomePage .project{
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -482,15 +482,11 @@
 .transportHomePage .project > p{
     text-align: center;
     font-size: 17px;
-    padding: 0px 50px;
 }
 .transportHomePage .project h1{
-    text-align: start;
-    font-size: 50px;
-    padding: 0px 50px;
+    text-align: center;
 }
 .transportHomePage .project .projectSec{
-    padding: 0px 50px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -613,7 +609,24 @@
     }
     .transportHomePage .whoWeAre .wItemSec .wRightSec{
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
+    }
+    .transportHomePage .whoWeAre .wItemSec .categoryBtnSec div{
+        height: 30px;
+        width: 50px;
+    }
+    .transportHomePage .whoWeAre .wItemSec .categoryBtnSec div span{
+        height: 20px;
+    }
+    .transportHomePage .whoWeAre .wItemSec .categoryBtnSec div span.right{
+        left: 23px;
+    }
+    .transportHomePage .whoWeAre .wItemSec .categoryBtnSec h4{
+        font-size: 10px;
     }
 
     /* whatWeDo */
@@ -682,11 +695,7 @@
     }
 
     /* project */
-    .transportHomePage .project .projectSec .projectItem{
-        width: 300px;
-        height: auto;
-        min-height: 370px;
-    }
+    
     
     .transportHomePage .project .projectSec{
         grid-template-columns: 1fr;
