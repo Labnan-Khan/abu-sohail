@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './transportHome.css'
 import { IoMdCheckmark } from 'react-icons/io'
-import { FaChevronLeft, FaChevronRight, FaCogs, FaHeadset, FaShieldAlt, FaTools, FaTruck, FaUserTie } from 'react-icons/fa'
+import { FaChevronLeft, FaChevronRight, FaCogs, FaGlobeAmericas, FaHeadset, FaShieldAlt, FaTools, FaTruck, FaUsers, FaUserTie } from 'react-icons/fa'
 
 import CountUpAnimation from '../CountUpAnimation'
 import Horisontal from '../horizontelAnimation/Horisontal'
@@ -358,30 +358,30 @@ const handleNextSubCategory = () => {
 
         <div className='project'>
             {/* <h5>Projects</h5> */}
-            <h1>Where Transportation <br /> Meets <span>Performance</span></h1>
-            <p>Real transportation solutions supporting businesses and major projects.</p>
+            <h1>Why Choose Abu Suhail?</h1>
+            Solving challenges specific to your industry, a solution that suits your every need.
+            
             <div className='projectSec'>
-
-                
-
-
-                {projectData.map((item, index) => (
-                    <div className="projectItem" key={index}>
-                        <div style={{backgroundImage: `url(${item.img})`}}> </div>
-                        <h3>{item.heading}</h3>
-                        <p>{item.para}</p>
-                    </div>
-                ))}
-
-
-                
-                <div className='projectItem'>
-                    
-                    <h3>Heavy Cargo Movement</h3>
-                    <p>Safe transportation for heavy and oversized cargo.</p>
-                    <Link to={"/contact"}><button>Let's Connect</button></Link>
+                <div>
+                    <span><FaUsers /></span>
+                    <h3>Customer-Centric Approach</h3>
+                    <p>We prioritize your needs and work closely with you to deliver customized solutions.</p>
                 </div>
-
+                <div>
+                    <span><FaUserTie /></span>
+                    <h3>Expert Team</h3>
+                    <p>Our experienced professionals are committed to providing exceptional service and support.</p>
+                </div>
+                <div>
+                    <span><FaCogs /></span>
+                    <h3>Innovative Technology</h3>
+                    <p>We leverage cutting-edge technology to enhance operational efficiency and transparency.</p>
+                </div>
+                <div>
+                    <span><FaGlobeAmericas /></span>
+                    <h3>Global Reach</h3>
+                    <p>With a robust network, we offer logistics solutions that span across regions, ensuring seamless operations.</p>
+                </div>
             </div>
 
         </div>

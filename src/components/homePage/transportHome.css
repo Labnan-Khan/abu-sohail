@@ -424,7 +424,7 @@
     gap: 30px;
     background-color: #02254B;
     color: white;
-    transform: translateY(-100px);
+    /* transform: translateY(-100px); */
     padding: 100px 0px;
  }
 
@@ -477,9 +477,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
-    overflow: hidden;
-    padding: 70px 0px;
+    align-items: center;
  }
 .transportHomePage .project > p{
     text-align: center;
@@ -494,70 +492,39 @@
 .transportHomePage .project .projectSec{
     padding: 0px 50px;
     width: 100%;
-    display: flex;
-    justify-content: start;
-    align-items: start;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
     gap: 20px;
-    overflow:scroll;
-    margin-top: 20px;
-    scrollbar-width: none;
 }
-.transportHomePage .project .projectSec .projectItem{
-    width: 300px;
-    height: 350px;
-    background-color: black;
+.transportHomePage .project .projectSec div{
+    min-height: 250px;
+    background-color: #02254B;
     padding-bottom: 20px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    flex-shrink: 0;
-    overflow: hidden;
+    justify-content: start;
+    gap: 5px;
+    padding: 20px;
     
 }
-.transportHomePage .project .projectSec .projectItem div{
-    background-image: url(../transportHomeHerosectionImg.webp);
-    width: 100%;
-    aspect-ratio: 12/9;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+
+.transportHomePage .project .projectSec div span{
+    font-size: 50px;
+    display: flex;
+    margin-top: 10px;
+    color: white;
 }
-.transportHomePage .project .projectSec .projectItem h3{
-    padding: 0px 10px;
+.transportHomePage .project .projectSec div h3{
     color: white;
     font-size: 18px;
     margin-top: 20px;
 }
-.transportHomePage .project .projectSec .projectItem p{
-    padding:10px;
+.transportHomePage .project .projectSec div p{
     font-size: 15px;
     color: rgb(129, 128, 128);
 }
 
-
-.transportHomePage .project .projectSec .projectItem:last-child{
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.transportHomePage .project .projectSec .projectItem:last-child h3{
-    font-size: 40px;
-}
-.transportHomePage .project .projectSec .projectItem:last-child a{
-    width: 100%;
-}
-.transportHomePage .project .projectSec .projectItem:last-child button{
-    width: 90%;
-    padding: 10px;
-    font-size: 20px;
-    color: black;
-    background-color: white;
-    border-radius: 10px;
-
-}
 /* howWeWork */
 .transportHomePage .howWeWork{
     width: 80%;
@@ -600,70 +567,15 @@
 }
 
 
-/* homeContactUs */
-.transportHomePage .homeContactUs{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
-    background-color: #02254B;
-    margin-bottom: 50px;
-    padding: 20px;
-    border-radius: 30px;
-    min-height: 250px;
-    margin-top: 50px;
-}
-.transportHomePage .homeContactUs h1{
-    color: white;
-    width: 80%;
-}
-.transportHomePage .homeContactUs p{
-    font-size: 20px;
-    margin-bottom: 30px;
-    width: 70%;
-}
 
-.transportHomePage .homeContactUs button{
-    color: black;
-    background-color: white;
-    font-size: 20px;
-    padding: 15px 30px;
-    border-radius: 10px;
+@media (max-width:1000px) and (min-width:765px){
+    .transportHomePage .project .projectSec{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .transportHomePage .project .projectSec div{
+        min-height: 200px;
+    }
 }
-
-/* Coverage */
-.transportHomePage .Coverage{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    background: linear-gradient(to bottom, white, #02254B);
-    padding-top: 60px;
-    padding: 20px;
-}
-.transportHomePage .Coverage > p{
-    text-align: center;
-}
-.transportHomePage .Coverage h1,
-.transportHomePage .Coverage h5{
-    /* color: white; */
-}
-
-.transportHomePage .Coverage div{
-    width: 100%;
-    background-image: url(../../assets/coverageImg.png);
-    background-position: center bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
-    aspect-ratio: 20/10;
-    transform: translateY(60px);
-}
-
 @media (max-width:765px){
 
     .transportHomePage h1{
@@ -774,6 +686,13 @@
         width: 300px;
         height: auto;
         min-height: 370px;
+    }
+    
+    .transportHomePage .project .projectSec{
+        grid-template-columns: 1fr;
+    }
+    .transportHomePage .project .projectSec div{
+        min-height: 200px;
     }
     /* howWeWork */
     .transportHomePage .howWeWork{
