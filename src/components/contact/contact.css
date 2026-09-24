@@ -1,0 +1,236 @@
+.ContactUs{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-image: url(../snake2.0.png);
+    background-size: cover;
+    background-position:top  center;
+    background-repeat: no-repeat;
+    /* background-color: #1a0133; */
+    padding: 100px 0px;
+    padding-top: 90px;
+    gap: 10px;
+    
+}
+
+
+
+
+.ContactUs h1{
+    width: 90%;
+    text-align: center;
+    font-size: 40px;
+}
+.ContactUs > p{
+    color: rgb(58, 58, 58);
+    width: 70%;
+    text-align: center;
+}
+.ContactUs .contactHomeRight{
+    margin-top: 30px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 35px;
+    background-color: #02254B;
+    border-radius: 20px;
+    
+    box-shadow: inset 0px 0px 20px #02254B;
+    box-sizing: border-box;
+    position: relative;
+}
+.ContactUs .contactHomeRight .formSec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+ .contactHomeRight button{
+    width: 90%;
+    background-color: white;
+    /* height: 40px; */
+    border: 2px solid white;
+    padding: 15px;
+    border-radius: 20px;
+    color: #02254B;
+    font-weight: 600;
+    outline: none;
+    font-size: 14px;
+    transition: all 0.3s ease-in;
+    box-shadow: 0px 0px 10px #02254B;
+}
+ .contactHomeRight button:hover{
+    color: white;
+    background-color: #02254B;
+    border: 2px solid white;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px black;
+}
+
+ .contactHomeRight input{
+    width: 100%;
+    background-color: #0378f626;
+    height: 40px;
+    border: 1px solid rgb(149, 149, 149);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    outline: none;
+    font-size: 14px;
+}
+ .contactHomeRight .errorInput{
+    border: 1px solid red !important;
+    box-shadow: inset 0px 0px 1px red;
+}
+
+ .contactHomeRight input::placeholder, textarea::placeholder{
+    color: white;
+}
+ .contactHomeRight input:-webkit-autofill {
+  -webkit-text-fill-color: white !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+ .contactHomeRight input:hover{
+    border: 1px solid white;
+}
+
+.contactHomeRight .dropdownSec{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0px
+}
+
+.contactHomeRight .dropdownSec p{
+    width: 65%;
+}
+.contactHomeRight  select{
+     width: 35%;
+    background-color: #0378f626;
+    height: 40px;
+    border: 1px solid rgb(149, 149, 149);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    outline: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.contactHomeRight  select option{
+    width: 100%;
+    background-color: #1a0133;
+    border: 1px solid rgb(149, 149, 149);
+    padding: 5px 0px;
+    cursor: pointer;
+}
+
+ .contactHomeRight textarea{
+    width: 100%;
+     background-color: #0378f626;
+    height: 100px;
+    border: 1px solid rgb(149, 149, 149);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    outline: none;
+    font-size: 14px;
+    overflow-y:hidden ;
+    resize: none;
+}
+
+.contactHomeRight textarea:hover{
+    border: 1px solid white;
+}
+.ContactUs .contactHomeRight .SubmitBtnDiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.ContactUs  .contactHomeRight .SubmitBtnDiv button{
+    
+    transition: all 1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.5s ease;
+}
+.ContactUs  .contactHomeRight .SubmitBtnDiv .MessageSubmite{
+    background-color: #02254B;
+    color: white;
+    transition: all 0.5s ease;
+    cursor:default;
+    pointer-events: none;
+}
+.ContactUs  .contactHomeRight .SubmitBtnDiv button span{
+    background-color: #02254B;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    transition: all 0.5s ease;
+}
+
+.hideErrorMeg{
+    position: absolute;
+    color: red;
+    bottom: -10px;
+    transform: translateY(100%);
+    padding: 10px 20px;
+    width: 80%;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid rgb(238, 6, 6);
+    background-color: #0378f626;
+    transition: all 0.5s ease;
+    opacity: 0;
+    /* transform: scale(0.9); */
+}
+
+.showErrorMeg{
+    /* transform: scale(1); */
+    opacity: 1;
+    transform: translateY(100%);
+}
+
+
+@media (max-width:768px){
+
+.ContactUs {
+    padding-top: 20px;
+}
+.ContactUs > p{
+    text-align: start;
+    width: 90%;
+}
+.ContactUs h1{
+    font-size: 20px;
+    text-align: start;
+}
+.ContactUs  .contactHomeRight{
+    width: 90%;
+}
+
+}

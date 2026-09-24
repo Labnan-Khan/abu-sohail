@@ -358,7 +358,7 @@ const handleNextSubCategory = () => {
 
         <div className='project'>
             {/* <h5>Projects</h5> */}
-            <h1>Why choese Abu suhail transportation?</h1>
+            <h1>Why choose Abu suhail transportation?</h1>
             <p>Solving challenges specific to your industry, a solution that suits your every need.</p>
             
             <div className='projectSec'>
