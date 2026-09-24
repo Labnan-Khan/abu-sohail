@@ -15,7 +15,7 @@ function ContactUs() {
     const [copyNumberIcon, setCopyNumberlIcon]= useState(false)
     const copyemail= ()=>{
         
-        navigator.clipboard.writeText("info@rayztechsolutions.com")
+        navigator.clipboard.writeText("abusuhail063@gmail.com")
             .then(()=>{
                 setCopyemailIcon(true)
                 setTimeout(()=>{

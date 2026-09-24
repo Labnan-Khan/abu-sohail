@@ -239,3 +239,15 @@
     
 
 }
+@media (max-width:765px){
+
+    
+    .nav .navName{
+        justify-content: start;
+        align-items: start;
+        padding-left: 20px;
+    }
+    .nav .navName a .navMainRight{
+        display: none;
+    }
+}

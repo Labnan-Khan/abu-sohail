@@ -21,7 +21,7 @@ function Footera() {
 
           <div className='footerLogo'>
             <h5>Contact us</h5>
-            <div><span><TbMailFilled /></span>info@rayztechsolutions.com</div>
+            <div><span><TbMailFilled /></span>abusuhail063@gmail.com</div>
             <div><span><FaPhoneAlt /></span>+971 50 163 3959</div>
             <div><span><FaLocationDot /></span>Thoban industrial area fujairah United Arab Emirates</div>
           </div>
