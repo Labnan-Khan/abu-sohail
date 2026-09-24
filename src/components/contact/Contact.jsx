@@ -14,6 +14,7 @@ function Contact() {
     const[userName, setUserName] = useState("")
     const[companyName, setCompanyName] = useState("")
     const[userEmail, setUserEmail] = useState("")
+    const[userNumber, setUserNumber] = useState("")
     const[firstDropDown, setFirstDropDown] = useState("")
 
 
@@ -39,6 +40,7 @@ const sendEmail = (e) => {
   userName: userName.trim() === "",
   companyName: companyName.trim() === "",
   userEmail: userEmail.trim() === "",
+  userNumber: userEmail.trim() === "",
   firstDropDown: firstDropDown === "",
 };
 
@@ -69,6 +71,7 @@ if (Object.values(newErrors).some(err => err)) {
         setUserName("");
         setCompanyName("");
         setUserEmail("");
+        setUserNumber("");
         setFirstDropDown("");
         setSubmitBtn(true)
 }).catch((error)=>{
@@ -90,9 +93,9 @@ if (Object.values(newErrors).some(err => err)) {
                 <input type="text" className={errors.userName? "errorInput" :""} name="user_name"  placeholder='Name' value={userName} onChange={(e)=>{ setUserName(e.target.value); setErrors(prev => ({ ...prev, userName: false }));}}/>
                 <input type="text" className={errors.companyName? "errorInput" :""} name="company_name" placeholder='Company Name' value={companyName} onChange={(e)=>{ setCompanyName(e.target.value); setErrors(prev => ({ ...prev, companyName: false }));}}/>
                 <input type="email" className={errors.userEmail? "errorInput" :""} name="user_email" placeholder='Email' value={userEmail} onChange={(e)=>{ setUserEmail(e.target.value); setErrors(prev => ({ ...prev, userEmail: false }));}}/>
-                <input type="number" className={errors.userEmail? "errorInput" :""} name="user_email" placeholder='Phone number' value={userEmail} onChange={(e)=>{ setUserEmail(e.target.value); setErrors(prev => ({ ...prev, userEmail: false }));}}/>
+                <input type="number" className={errors.userNumber? "errorInput" :""} name="user_Number" placeholder='Phone number' value={userNumber} onChange={(e)=>{ setUserNumber(e.target.value); setErrors(prev => ({ ...prev, userNumber: false }));}}/>
                 <div className='dropdownSec'>
-                    <p>How do you get your video editing done?</p>
+                    <p>What are you interested in?</p>
                     <select id="country" name="user_dropdown1" className={errors.firstDropDown? "errorInput" :""} value={firstDropDown} onChange={(e)=>{ setFirstDropDown(e.target.value); setErrors(prev => ({ ...prev, firstDropDown: false }));}}>
                         <option  value="">please select</option>
                         <option value="I don't">I don't</option>
@@ -104,7 +107,7 @@ if (Object.values(newErrors).some(err => err)) {
                     </select>
                 </div>
                 <div className='dropdownSec'>
-                    <p>Which monthly plan feels right for your business needs?</p>
+                    <p>In which industry you need our help?</p>
                     <select id="country" name="user_dropdown2">
                         <option value="">please select</option>
                         <option value="$748/month works for me">$748/month works for me</option>
