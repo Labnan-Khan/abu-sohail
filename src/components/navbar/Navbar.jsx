@@ -70,7 +70,7 @@ function Navbar() {
                 <div className='navMainRight'>
                     <p>ABU SUHAIL</p>
                     <div>
-                        <span>Heavy haulage</span>
+                        <span>Heavy Haulage</span>
                         <span>Machinery</span>
                         <span>Logistics</span>
                     </div>

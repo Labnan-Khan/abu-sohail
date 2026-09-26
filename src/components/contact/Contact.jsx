@@ -95,27 +95,19 @@ if (Object.values(newErrors).some(err => err)) {
                 <input type="email" className={errors.userEmail? "errorInput" :""} name="user_email" placeholder='Email' value={userEmail} onChange={(e)=>{ setUserEmail(e.target.value); setErrors(prev => ({ ...prev, userEmail: false }));}}/>
                 <input type="number" className={errors.userNumber? "errorInput" :""} name="user_Number" placeholder='Phone number' value={userNumber} onChange={(e)=>{ setUserNumber(e.target.value); setErrors(prev => ({ ...prev, userNumber: false }));}}/>
                 <div className='dropdownSec'>
-                    <p>What are you interested in?</p>
+                    <p>What service are you interested in?</p>
                     <select id="country" name="user_dropdown1" className={errors.firstDropDown? "errorInput" :""} value={firstDropDown} onChange={(e)=>{ setFirstDropDown(e.target.value); setErrors(prev => ({ ...prev, firstDropDown: false }));}}>
                         <option  value="">please select</option>
-                        <option value="I don't">I don't</option>
-                        <option value="I do it myself">I do it myself</option>
-                        <option value="Freelancer">Freelancer</option>
-                        <option value="In-house">In-house</option>
-                        <option value="Agency">Agency</option>
+                        <option value="Heavy Transportation">Heavy Transportation</option>
+                        <option value="Cargo Transportation">Cargo Transportation</option>
+                        <option value="Heavy Machinery Rental">⁠Heavy Machinery Rental</option>
+                        <option value="Heavy Equipment Transportation">Heavy Equipment Transportation</option>
+                        <option value="Truck & Trailer Services">⁠Truck & Trailer Services</option>
+                        <option value="Container Transportation">⁠Container Transportation</option>
                         <option value="Other">Other</option>
                     </select>
                 </div>
-                <div className='dropdownSec'>
-                    <p>In which industry you need our help?</p>
-                    <select id="country" name="user_dropdown2">
-                        <option value="">please select</option>
-                        <option value="$748/month works for me">$748/month works for me</option>
-                        <option value="$1,666/month fits my goals">$1,666/month fits my goals</option>
-                        <option value="I might need a custom plan">I might need a custom plan</option>
-                        <option value="This fells beyond my budget">This fells beyond my budget</option>
-                    </select>
-                </div>
+                
                 
                 <textarea type="text" name='message' placeholder='Message' cols="7"></textarea >
                 <div className='SubmitBtnDiv'>

@@ -61,7 +61,7 @@ function Horisontal() {
 
                  
                     
-                </div>
+        </div>
     </div>
   )
 }
