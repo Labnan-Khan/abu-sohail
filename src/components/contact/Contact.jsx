@@ -3,7 +3,7 @@ import './contact.css'
 // import FollowUs from '../FollowUs/FollowUs'
 import { PiHandWavingDuotone } from 'react-icons/pi'
 import { FaHandPointLeft, FaHandshake } from 'react-icons/fa'
-// import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 import { IoMdCheckmark } from 'react-icons/io'
 
 function Contact() {
@@ -64,8 +64,8 @@ if (Object.values(newErrors).some(err => err)) {
 
     
   // your email logic here
-   emailjs.sendForm("service_4rctlan", "template_jywq00z" , form.current, {
-        publicKey: "iAcTdkXScDxMzppgd",
+   emailjs.sendForm("service_v2vroi5", "template_7a58h6b" , form.current, {
+        publicKey: "oqtuO_I9qPOKz_gx4",
     }).then(()=>{
         form.current.reset()
         setUserName("");
